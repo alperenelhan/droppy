@@ -56,13 +56,10 @@ namespace Droppy {
             bug_url = "https://bugs.launchpad.net/droppy";
             help_url = "https://answers.launchpad.net/droppy";
             translate_url = "https://translations.launchpad.net/droppy";
-            about_authors = { "David Gomes <david@elementaryos.org",
-                              "Mario Guerriero <mefrio@elementaryos.org>",
-                              "Akshay Shekher <voldyman666@gmail.com>" };
+            about_authors = { "Osman Alperen Elhan <alperen@elhan.org£",
+                              "Ahmet Yasin Uslu <nepjua@gmail.com" };
 
-            //about_documenters = {"",""};
-            about_artists = { "Daniel Foré <daniel@elementaryos.org>" };
-            about_translators = "Launchpad Translators";
+            // about_translators = "Launchpad Translators";
             about_license_type = License.GPL_3_0;
         }
 
@@ -109,7 +106,7 @@ namespace Droppy {
         };
 
         public static int main (string[] args) {
-            app_cmd_name = "Pantheon Terminal";
+            app_cmd_name = "Droppy";
 
             var context = new OptionContext ("File");
             context.add_main_entries (entries, "droppy");
@@ -123,7 +120,7 @@ namespace Droppy {
             }
 
             if (print_version) {
-                stdout.printf ("Pantheon Terminal %s\n", Constants.VERSION);
+                stdout.printf ("Droppy %s\n", Constants.VERSION);
                 stdout.printf ("Copyright 2011-2012 Terminal Developers.\n");
                 return 0;
             }
