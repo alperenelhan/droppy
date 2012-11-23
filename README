@@ -1,5 +1,14 @@
-Pantheon Terminal (referred to simply as "Terminal" when installed) is a super lightweight, beautiful, and simple terminal.
 
-It's designed to be setup with sane defaults and little to no configuration. It's just a terminal, nothing more, nothing less.
+# Droppy
 
-https://launchpad.net/pantheon-terminal
+Droppy is a fork of [Pantheon Terminal][PT] focussed on drop-down usage.
+
+## Inspirations
+
+- Since it is a fork of [Pantheon Terminal][PT] [Droppy][d]'s features come from there.
+- Drop Down usage from [Guake][G].
+
+
+ [PT]: https://launchpad.net/pantheon-terminal
+ [G]: http://guake.org/
+ [d]: http://github.com/issizler/droppy
