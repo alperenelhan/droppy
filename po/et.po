@@ -1,11 +1,11 @@
-# Estonian translation for pantheon-terminal
+# Estonian translation for droppy
 # Copyright (c) 2012 Rosetta Contributors and Canonical Ltd 2012
-# This file is distributed under the same license as the pantheon-terminal package.
+# This file is distributed under the same license as the droppy package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2012.
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: pantheon-terminal\n"
+"Project-Id-Version: droppy\n"
 "Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
 "POT-Creation-Date: 2012-09-13 00:25+0100\n"
 "PO-Revision-Date: 2012-11-17 22:46+0000\n"
@@ -17,143 +17,143 @@ msgstr ""
 "X-Launchpad-Export-Date: 2012-11-18 04:52+0000\n"
 "X-Generator: Launchpad (build 16278)\n"
 
-#: /home/david/src/pantheon-terminal/po/../src/config.vala:12
+#: /home/david/src/droppy/po/../src/config.vala:12
 msgid "Use the command line"
 msgstr "Käsurea kasutamine"
 
-#: /home/david/src/pantheon-terminal/po/../src/config.vala:13
-#: /home/david/src/pantheon-terminal/po/../src/PantheonTerminalWindow.vala:100
-#: /home/david/src/pantheon-terminal/po/../src/PantheonTerminalWindow.vala:345
-#: /home/david/src/pantheon-terminal/po/../src/PantheonTerminalWindow.vala:349
+#: /home/david/src/droppy/po/../src/config.vala:13
+#: /home/david/src/droppy/po/../src/DroppyWindow.vala:100
+#: /home/david/src/droppy/po/../src/DroppyWindow.vala:345
+#: /home/david/src/droppy/po/../src/DroppyWindow.vala:349
 msgid "Terminal"
 msgstr "Terminal"
 
-#: /home/david/src/pantheon-terminal/po/../src/config.vala:14
-#: /home/david/src/pantheon-terminal/po/../src/PantheonTerminalWindow.vala:503
+#: /home/david/src/droppy/po/../src/config.vala:14
+#: /home/david/src/droppy/po/../src/DroppyWindow.vala:503
 msgid "New Window"
 msgstr "Uus aken"
 
-#: /home/david/src/pantheon-terminal/po/../src/config.vala:15
+#: /home/david/src/droppy/po/../src/config.vala:15
 msgid "New Root Window"
 msgstr "Uus aken juurkasutajana"
 
-#: /home/david/src/pantheon-terminal/po/../src/PantheonTerminal.vala:99
+#: /home/david/src/droppy/po/../src/Droppy.vala:99
 msgid "Set shell at launch"
 msgstr "Shell'i määramine süsteemi käivitamisel"
 
-#: /home/david/src/pantheon-terminal/po/../src/PantheonTerminalWindow.vala:215
+#: /home/david/src/droppy/po/../src/DroppyWindow.vala:215
 msgid "Open a new tab"
 msgstr "Ava uus kaart"
 
-#: /home/david/src/pantheon-terminal/po/../src/PantheonTerminalWindow.vala:501
+#: /home/david/src/droppy/po/../src/DroppyWindow.vala:501
 msgid "Quit"
 msgstr "Välju"
 
-#: /home/david/src/pantheon-terminal/po/../src/PantheonTerminalWindow.vala:502
+#: /home/david/src/droppy/po/../src/DroppyWindow.vala:502
 msgid "Close"
 msgstr "Sulge"
 
-#: /home/david/src/pantheon-terminal/po/../src/PantheonTerminalWindow.vala:503
+#: /home/david/src/droppy/po/../src/DroppyWindow.vala:503
 msgid "Open a new window"
 msgstr "Ava uus aken"
 
-#: /home/david/src/pantheon-terminal/po/../src/PantheonTerminalWindow.vala:505
+#: /home/david/src/droppy/po/../src/DroppyWindow.vala:505
 msgid "New Tab"
 msgstr "Uus kaart"
 
-#: /home/david/src/pantheon-terminal/po/../src/PantheonTerminalWindow.vala:505
+#: /home/david/src/droppy/po/../src/DroppyWindow.vala:505
 msgid "Create a new tab"
 msgstr "Loo uus kaart"
 
-#: /home/david/src/pantheon-terminal/po/../src/PantheonTerminalWindow.vala:506
+#: /home/david/src/droppy/po/../src/DroppyWindow.vala:506
 msgid "Copy"
 msgstr "Kopeeri"
 
-#: /home/david/src/pantheon-terminal/po/../src/PantheonTerminalWindow.vala:506
+#: /home/david/src/droppy/po/../src/DroppyWindow.vala:506
 msgid "Copy the selected text"
 msgstr "Kopeeri valitud tekst"
 
-#: /home/david/src/pantheon-terminal/po/../src/PantheonTerminalWindow.vala:507
+#: /home/david/src/droppy/po/../src/DroppyWindow.vala:507
 msgid "Paste"
 msgstr "Aseta"
 
-#: /home/david/src/pantheon-terminal/po/../src/PantheonTerminalWindow.vala:507
+#: /home/david/src/droppy/po/../src/DroppyWindow.vala:507
 msgid "Paste some text"
 msgstr "Aseta tekst"
 
-#: /home/david/src/pantheon-terminal/po/../src/PantheonTerminalWindow.vala:508
+#: /home/david/src/droppy/po/../src/DroppyWindow.vala:508
 msgid "Select All"
 msgstr "Vali kõik"
 
-#: /home/david/src/pantheon-terminal/po/../src/PantheonTerminalWindow.vala:509
+#: /home/david/src/droppy/po/../src/DroppyWindow.vala:509
 msgid "Select all the text in the terminal"
 msgstr "Vali terminali kogu tekst"
 
-#: /home/david/src/pantheon-terminal/po/../src/PantheonTerminalWindow.vala:510
+#: /home/david/src/droppy/po/../src/DroppyWindow.vala:510
 msgid "About"
 msgstr "Programmist"
 
-#: /home/david/src/pantheon-terminal/po/../src/PantheonTerminalWindow.vala:510
+#: /home/david/src/droppy/po/../src/DroppyWindow.vala:510
 msgid "Show about window"
 msgstr "Näita programmist lähemalt akent"
 
-#: /home/david/src/pantheon-terminal/po/../src/PantheonTerminalWindow.vala:512
+#: /home/david/src/droppy/po/../src/DroppyWindow.vala:512
 msgid "Next Tab"
 msgstr "Järgmine kaart"
 
-#: /home/david/src/pantheon-terminal/po/../src/PantheonTerminalWindow.vala:512
+#: /home/david/src/droppy/po/../src/DroppyWindow.vala:512
 msgid "Go to next tab"
 msgstr "Mine järgmisele kaardile"
 
-#: /home/david/src/pantheon-terminal/po/../src/PantheonTerminalWindow.vala:513
+#: /home/david/src/droppy/po/../src/DroppyWindow.vala:513
 msgid "Previous Tab"
 msgstr "Eelmine kaart"
 
-#: /home/david/src/pantheon-terminal/po/../src/PantheonTerminalWindow.vala:513
+#: /home/david/src/droppy/po/../src/DroppyWindow.vala:513
 msgid "Go to previous tab"
 msgstr "Mine eelmisele kaardile"
 
-#: /home/david/src/pantheon-terminal/po/../src/PantheonTerminalWindow.vala:515
+#: /home/david/src/droppy/po/../src/DroppyWindow.vala:515
 msgid "Fullscreen"
 msgstr "Täisekraan"
 
-#: /home/david/src/pantheon-terminal/po/../src/PantheonTerminalWindow.vala:515
+#: /home/david/src/droppy/po/../src/DroppyWindow.vala:515
 msgid "Toggle/Untoggle fullscreen"
 msgstr "Täisekraani sisse/välja lülitamine"
 
-#: /home/david/src/pantheon-terminal/po/../src/ForegroundProcessDialog.vala:29
+#: /home/david/src/droppy/po/../src/ForegroundProcessDialog.vala:29
 msgid "Are you sure you want to close this tab?"
 msgstr "Oled sa kindel, et soovid selle kaardi sulgeda?"
 
-#: /home/david/src/pantheon-terminal/po/../src/ForegroundProcessDialog.vala:30
+#: /home/david/src/droppy/po/../src/ForegroundProcessDialog.vala:30
 msgid "There is an active process on this tab."
 msgstr "See kaart sisaldab töösolevat protsessi"
 
-#: /home/david/src/pantheon-terminal/po/../src/ForegroundProcessDialog.vala:31
+#: /home/david/src/droppy/po/../src/ForegroundProcessDialog.vala:31
 msgid "If you close this tab, this process will end."
 msgstr "Akna sulgemisel lõpeb ka protsess"
 
-#: /home/david/src/pantheon-terminal/po/../src/ForegroundProcessDialog.vala:33
-#: /home/david/src/pantheon-terminal/po/../src/ForegroundProcessDialog.vala:52
+#: /home/david/src/droppy/po/../src/ForegroundProcessDialog.vala:33
+#: /home/david/src/droppy/po/../src/ForegroundProcessDialog.vala:52
 msgid "Cancel"
 msgstr "Loobu"
 
-#: /home/david/src/pantheon-terminal/po/../src/ForegroundProcessDialog.vala:37
+#: /home/david/src/droppy/po/../src/ForegroundProcessDialog.vala:37
 msgid "Close Tab"
 msgstr "Sulge kaart"
 
-#: /home/david/src/pantheon-terminal/po/../src/ForegroundProcessDialog.vala:48
+#: /home/david/src/droppy/po/../src/ForegroundProcessDialog.vala:48
 msgid "Are you sure you want to quit Terminal?"
 msgstr "Oled sa kindel, et soovid terminalist väljuda?"
 
-#: /home/david/src/pantheon-terminal/po/../src/ForegroundProcessDialog.vala:49
+#: /home/david/src/droppy/po/../src/ForegroundProcessDialog.vala:49
 msgid "There is an active process on this terminal."
 msgstr "Terminalis on töösolev protsess."
 
-#: /home/david/src/pantheon-terminal/po/../src/ForegroundProcessDialog.vala:50
+#: /home/david/src/droppy/po/../src/ForegroundProcessDialog.vala:50
 msgid "If you quit Terminal, this process will end."
 msgstr "Terminalist väljumisel katkestataks protsess."
 
-#: /home/david/src/pantheon-terminal/po/../src/ForegroundProcessDialog.vala:56
+#: /home/david/src/droppy/po/../src/ForegroundProcessDialog.vala:56
 msgid "Quit Terminal"
 msgstr "Välju terminalist"

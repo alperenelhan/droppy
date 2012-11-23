@@ -1,11 +1,11 @@
-# Esperanto translation for pantheon-terminal
+# Esperanto translation for droppy
 # Copyright (c) 2012 Rosetta Contributors and Canonical Ltd 2012
-# This file is distributed under the same license as the pantheon-terminal package.
+# This file is distributed under the same license as the droppy package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2012.
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: pantheon-terminal\n"
+"Project-Id-Version: droppy\n"
 "Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
 "POT-Creation-Date: 2012-09-13 00:25+0100\n"
 "PO-Revision-Date: 2012-08-15 15:33+0000\n"
@@ -17,143 +17,143 @@ msgstr ""
 "X-Launchpad-Export-Date: 2012-09-15 05:16+0000\n"
 "X-Generator: Launchpad (build 15944)\n"
 
-#: /home/david/src/pantheon-terminal/po/../src/config.vala:12
+#: /home/david/src/droppy/po/../src/config.vala:12
 msgid "Use the command line"
 msgstr "Uzi komandlinion"
 
-#: /home/david/src/pantheon-terminal/po/../src/config.vala:13
-#: /home/david/src/pantheon-terminal/po/../src/PantheonTerminalWindow.vala:100
-#: /home/david/src/pantheon-terminal/po/../src/PantheonTerminalWindow.vala:345
-#: /home/david/src/pantheon-terminal/po/../src/PantheonTerminalWindow.vala:349
+#: /home/david/src/droppy/po/../src/config.vala:13
+#: /home/david/src/droppy/po/../src/DroppyWindow.vala:100
+#: /home/david/src/droppy/po/../src/DroppyWindow.vala:345
+#: /home/david/src/droppy/po/../src/DroppyWindow.vala:349
 msgid "Terminal"
 msgstr "Terminalo"
 
-#: /home/david/src/pantheon-terminal/po/../src/config.vala:14
-#: /home/david/src/pantheon-terminal/po/../src/PantheonTerminalWindow.vala:503
+#: /home/david/src/droppy/po/../src/config.vala:14
+#: /home/david/src/droppy/po/../src/DroppyWindow.vala:503
 msgid "New Window"
 msgstr "Nova fenestro"
 
-#: /home/david/src/pantheon-terminal/po/../src/config.vala:15
+#: /home/david/src/droppy/po/../src/config.vala:15
 msgid "New Root Window"
 msgstr "Nova fenestro kiel ĉefuzanto"
 
-#: /home/david/src/pantheon-terminal/po/../src/PantheonTerminal.vala:99
+#: /home/david/src/droppy/po/../src/Droppy.vala:99
 msgid "Set shell at launch"
 msgstr "Agordi ŝelon je lanĉo"
 
-#: /home/david/src/pantheon-terminal/po/../src/PantheonTerminalWindow.vala:215
+#: /home/david/src/droppy/po/../src/DroppyWindow.vala:215
 msgid "Open a new tab"
 msgstr "Malfermi novan langeton"
 
-#: /home/david/src/pantheon-terminal/po/../src/PantheonTerminalWindow.vala:501
+#: /home/david/src/droppy/po/../src/DroppyWindow.vala:501
 msgid "Quit"
 msgstr "Eliri"
 
-#: /home/david/src/pantheon-terminal/po/../src/PantheonTerminalWindow.vala:502
+#: /home/david/src/droppy/po/../src/DroppyWindow.vala:502
 msgid "Close"
 msgstr "Fermi"
 
-#: /home/david/src/pantheon-terminal/po/../src/PantheonTerminalWindow.vala:503
+#: /home/david/src/droppy/po/../src/DroppyWindow.vala:503
 msgid "Open a new window"
 msgstr "Malfermi novan fenestron"
 
-#: /home/david/src/pantheon-terminal/po/../src/PantheonTerminalWindow.vala:505
+#: /home/david/src/droppy/po/../src/DroppyWindow.vala:505
 msgid "New Tab"
 msgstr "Nova langeto"
 
-#: /home/david/src/pantheon-terminal/po/../src/PantheonTerminalWindow.vala:505
+#: /home/david/src/droppy/po/../src/DroppyWindow.vala:505
 msgid "Create a new tab"
 msgstr "Krei novan langeton"
 
-#: /home/david/src/pantheon-terminal/po/../src/PantheonTerminalWindow.vala:506
+#: /home/david/src/droppy/po/../src/DroppyWindow.vala:506
 msgid "Copy"
 msgstr "Kopii"
 
-#: /home/david/src/pantheon-terminal/po/../src/PantheonTerminalWindow.vala:506
+#: /home/david/src/droppy/po/../src/DroppyWindow.vala:506
 msgid "Copy the selected text"
 msgstr "Kopii la elektitan tekston"
 
-#: /home/david/src/pantheon-terminal/po/../src/PantheonTerminalWindow.vala:507
+#: /home/david/src/droppy/po/../src/DroppyWindow.vala:507
 msgid "Paste"
 msgstr "Alglui"
 
-#: /home/david/src/pantheon-terminal/po/../src/PantheonTerminalWindow.vala:507
+#: /home/david/src/droppy/po/../src/DroppyWindow.vala:507
 msgid "Paste some text"
 msgstr "Alglui tekston"
 
-#: /home/david/src/pantheon-terminal/po/../src/PantheonTerminalWindow.vala:508
+#: /home/david/src/droppy/po/../src/DroppyWindow.vala:508
 msgid "Select All"
 msgstr "Elekti ĉiujn"
 
-#: /home/david/src/pantheon-terminal/po/../src/PantheonTerminalWindow.vala:509
+#: /home/david/src/droppy/po/../src/DroppyWindow.vala:509
 msgid "Select all the text in the terminal"
 msgstr "Elekti ĉiun tekston en terminalo"
 
-#: /home/david/src/pantheon-terminal/po/../src/PantheonTerminalWindow.vala:510
+#: /home/david/src/droppy/po/../src/DroppyWindow.vala:510
 msgid "About"
 msgstr "Pri"
 
-#: /home/david/src/pantheon-terminal/po/../src/PantheonTerminalWindow.vala:510
+#: /home/david/src/droppy/po/../src/DroppyWindow.vala:510
 msgid "Show about window"
 msgstr "Montri pri fenestro"
 
-#: /home/david/src/pantheon-terminal/po/../src/PantheonTerminalWindow.vala:512
+#: /home/david/src/droppy/po/../src/DroppyWindow.vala:512
 msgid "Next Tab"
 msgstr ""
 
-#: /home/david/src/pantheon-terminal/po/../src/PantheonTerminalWindow.vala:512
+#: /home/david/src/droppy/po/../src/DroppyWindow.vala:512
 msgid "Go to next tab"
 msgstr ""
 
-#: /home/david/src/pantheon-terminal/po/../src/PantheonTerminalWindow.vala:513
+#: /home/david/src/droppy/po/../src/DroppyWindow.vala:513
 msgid "Previous Tab"
 msgstr ""
 
-#: /home/david/src/pantheon-terminal/po/../src/PantheonTerminalWindow.vala:513
+#: /home/david/src/droppy/po/../src/DroppyWindow.vala:513
 msgid "Go to previous tab"
 msgstr ""
 
-#: /home/david/src/pantheon-terminal/po/../src/PantheonTerminalWindow.vala:515
+#: /home/david/src/droppy/po/../src/DroppyWindow.vala:515
 msgid "Fullscreen"
 msgstr "Tutekrane"
 
-#: /home/david/src/pantheon-terminal/po/../src/PantheonTerminalWindow.vala:515
+#: /home/david/src/droppy/po/../src/DroppyWindow.vala:515
 msgid "Toggle/Untoggle fullscreen"
 msgstr "Ŝalti tutekranan reĝimon"
 
-#: /home/david/src/pantheon-terminal/po/../src/ForegroundProcessDialog.vala:29
+#: /home/david/src/droppy/po/../src/ForegroundProcessDialog.vala:29
 msgid "Are you sure you want to close this tab?"
 msgstr "Ĉu vi certe volas fermi ĉi tiun langeton?"
 
-#: /home/david/src/pantheon-terminal/po/../src/ForegroundProcessDialog.vala:30
+#: /home/david/src/droppy/po/../src/ForegroundProcessDialog.vala:30
 msgid "There is an active process on this tab."
 msgstr "Estas aktivaj procezoj en ĉi tiu langeto."
 
-#: /home/david/src/pantheon-terminal/po/../src/ForegroundProcessDialog.vala:31
+#: /home/david/src/droppy/po/../src/ForegroundProcessDialog.vala:31
 msgid "If you close this tab, this process will end."
 msgstr "Se vi fermas ĉi tiun langeton, ĉi tiu procezos finos."
 
-#: /home/david/src/pantheon-terminal/po/../src/ForegroundProcessDialog.vala:33
-#: /home/david/src/pantheon-terminal/po/../src/ForegroundProcessDialog.vala:52
+#: /home/david/src/droppy/po/../src/ForegroundProcessDialog.vala:33
+#: /home/david/src/droppy/po/../src/ForegroundProcessDialog.vala:52
 msgid "Cancel"
 msgstr "Nuligi"
 
-#: /home/david/src/pantheon-terminal/po/../src/ForegroundProcessDialog.vala:37
+#: /home/david/src/droppy/po/../src/ForegroundProcessDialog.vala:37
 msgid "Close Tab"
 msgstr "Fermi langeton"
 
-#: /home/david/src/pantheon-terminal/po/../src/ForegroundProcessDialog.vala:48
+#: /home/david/src/droppy/po/../src/ForegroundProcessDialog.vala:48
 msgid "Are you sure you want to quit Terminal?"
 msgstr "Ĉu vi certe volas ĉesigi terminalon?"
 
-#: /home/david/src/pantheon-terminal/po/../src/ForegroundProcessDialog.vala:49
+#: /home/david/src/droppy/po/../src/ForegroundProcessDialog.vala:49
 msgid "There is an active process on this terminal."
 msgstr "Estas aktivaj procezoj en ĉi tiu terminalo."
 
-#: /home/david/src/pantheon-terminal/po/../src/ForegroundProcessDialog.vala:50
+#: /home/david/src/droppy/po/../src/ForegroundProcessDialog.vala:50
 msgid "If you quit Terminal, this process will end."
 msgstr "Se vi fermas la terminalon, ĉi tiu procezo finos."
 
-#: /home/david/src/pantheon-terminal/po/../src/ForegroundProcessDialog.vala:56
+#: /home/david/src/droppy/po/../src/ForegroundProcessDialog.vala:56
 msgid "Quit Terminal"
 msgstr "Ĉesigi terminalon"

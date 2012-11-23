@@ -20,7 +20,7 @@
 
 using Vte;
 
-namespace PantheonTerminal {
+namespace Droppy {
 
     public class ForegroundProcessDialog : Gtk.MessageDialog {
 

@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <schemalist>
-  <enum id="pantheon-terminal-window-states">
+  <enum id="droppy-window-states">
     <value nick="Normal" value="0" />
     <value nick="Maximized" value="1" />
     <value nick="Fullscreen" value="2" />
   </enum>
 
-  <schema path="/org/pantheon/pantheon-terminal/savedstate/" id="org.elementary.PantheonTerminal.SavedState" gettext-domain="pantheon-terminal">
+  <schema path="/org/pantheon/droppy/savedstate/" id="org.elementary.droppy.SavedState" gettext-domain="droppy">
     <key name="window-width" type="i">
       <default>500</default>
       <summary>The saved width of the window.</summary>
@@ -17,7 +17,7 @@
       <summary>The saved height of the window.</summary>
       <description>The saved height of the window. Must be greater than 400, or it will not take effect.</description>
     </key>
-    <key name="window-state" enum="pantheon-terminal-window-states">
+    <key name="window-state" enum="droppy-window-states">
       <default>"Normal"</default>
       <summary>The saved state of the window.</summary>
       <description>The saved state of the window.</description>
@@ -39,7 +39,7 @@
     </key>
   </schema>
 
-  <schema path="/org/pantheon/pantheon-terminal/settings/" id="org.elementary.PantheonTerminal.Settings" gettext-domain="pantheon-terminal">
+  <schema path="/org/pantheon/droppy/settings/" id="org.elementary.droppy.Settings" gettext-domain="droppy">
     <key name="scrollback-lines" type="i">
       <default>-1</default>
       <summary>Number of scrollback lines</summary>

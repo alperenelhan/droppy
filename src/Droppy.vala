@@ -23,13 +23,13 @@ using Gtk;
 using Granite;
 using Granite.Services;
 
-using PantheonTerminal;
+using Droppy;
 
-namespace PantheonTerminal {
+namespace Droppy {
 
-    public class PantheonTerminalApp : Granite.Application {
+    public class DroppyApp : Granite.Application {
 
-        public GLib.List <PantheonTerminalWindow> windows;
+        public GLib.List <DroppyWindow> windows;
 
         static string app_cmd_name;
         static string app_shell_name;
@@ -37,7 +37,7 @@ namespace PantheonTerminal {
 
         public int minimum_width;
         public int minimum_height;
-        
+
         construct {
             print_version = false;
             build_data_dir = Constants.DATADIR;
@@ -50,12 +50,12 @@ namespace PantheonTerminal {
             exec_name = app_cmd_name.down ().replace (" ", "-");
             app_years = "2011-2012";
             app_icon = "utilities-terminal";
-            app_launcher = "pantheon-terminal.desktop";
-            application_id = "net.launchpad.pantheon-terminal";
-            main_url = "https://launchpad.net/pantheon-terminal";
-            bug_url = "https://bugs.launchpad.net/pantheon-terminal";
-            help_url = "https://answers.launchpad.net/pantheon-terminal";
-            translate_url = "https://translations.launchpad.net/pantheon-terminal";
+            app_launcher = "droppy.desktop";
+            application_id = "net.launchpad.droppy";
+            main_url = "https://launchpad.net/droppy";
+            bug_url = "https://bugs.launchpad.net/droppy";
+            help_url = "https://answers.launchpad.net/droppy";
+            translate_url = "https://translations.launchpad.net/droppy";
             about_authors = { "David Gomes <david@elementaryos.org",
                               "Mario Guerriero <mefrio@elementaryos.org>",
                               "Akshay Shekher <voldyman666@gmail.com>" };
@@ -66,11 +66,11 @@ namespace PantheonTerminal {
             about_license_type = License.GPL_3_0;
         }
 
-        public PantheonTerminalApp () {
-            Logger.initialize ("PantheonTerminal");
+        public DroppyApp () {
+            Logger.initialize ("Droppy");
             Logger.DisplayLevel = LogLevel.DEBUG;
 
-            windows = new GLib.List <PantheonTerminalWindow> ();
+            windows = new GLib.List <DroppyWindow> ();
 
             saved_state = new SavedState ();
             settings = new Settings ();
@@ -89,14 +89,14 @@ namespace PantheonTerminal {
         }
 
         public void new_window () {
-            var window = new PantheonTerminalWindow (this);
+            var window = new DroppyWindow (this);
             window.show ();
             windows.append (window);
             add_window (window);
         }
 
         public void new_window_with_coords (int x, int y, bool should_recreate_tabs=true) {
-            var window = new PantheonTerminalWindow.with_coords (this, x, y, should_recreate_tabs);
+            var window = new DroppyWindow.with_coords (this, x, y, should_recreate_tabs);
             window.show ();
             windows.append (window);
             add_window (window);
@@ -112,13 +112,13 @@ namespace PantheonTerminal {
             app_cmd_name = "Pantheon Terminal";
 
             var context = new OptionContext ("File");
-            context.add_main_entries (entries, "pantheon-terminal");
+            context.add_main_entries (entries, "droppy");
             context.add_group (Gtk.get_option_group (true));
 
             try {
                 context.parse (ref args);
             } catch (Error e) {
-                stdout.printf ("pantheon-terminal: ERROR: " + e.message + "\n");
+                stdout.printf ("droppy: ERROR: " + e.message + "\n");
                 return 0;
             }
 
@@ -127,7 +127,7 @@ namespace PantheonTerminal {
                 stdout.printf ("Copyright 2011-2012 Terminal Developers.\n");
                 return 0;
             }
-            var app = new PantheonTerminalApp ();
+            var app = new DroppyApp ();
             return app.run (args);
         }
     }

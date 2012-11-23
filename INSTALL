@@ -8,4 +8,4 @@ To install it:
   cd build/
    make install #Might need sudo
 
-Alternatively, you can also (if you are a developer), launch it using "./pantheon-terminal".
+Alternatively, you can also (if you are a developer), launch it using "./droppy".

@@ -1,24 +1,24 @@
 [Desktop Entry]
-Name=Terminal
-GenericName=Terminal
+Name=Droppy
+GenericName=Droppy
 Comment=Use the command line
-TryExec=pantheon-terminal
-Exec=pantheon-terminal
+TryExec=droppy
+Exec=droppy
 Icon=utilities-terminal
 Type=Application
 Categories=GTK;Utility;TerminalEmulator;System;
 StartupNotify=true
-X-GNOME-Gettext-Domain=pantheon-terminal
+X-GNOME-Gettext-Domain=droppy
 
 X-Ayatana-Desktop-Shortcuts=NewWindow;NewRootWindow
 
 [NewWindow Shortcut Group]
 Name=New Window
-Exec=pantheon-terminal
+Exec=droppy
 TargetEnvironment=Unity
 
 [NewRootWindow Shortcut Group]
 Name=New Root Window
-Exec=gksu pantheon-terminal
+Exec=gksu droppy
 TargetEnvironment=Unity
 

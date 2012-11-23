@@ -18,12 +18,12 @@
   END LICENSE
 ***/
 
-namespace PantheonTerminal {
+namespace Droppy {
 
     public SavedState saved_state;
     public Settings settings;
 
-    public enum PantheonTerminalWindowState {
+    public enum DroppyWindowState {
         NORMAL = 0,
         MAXIMIZED = 1,
         FULLSCREEN = 2
@@ -33,13 +33,13 @@ namespace PantheonTerminal {
 
         public int window_width { get; set; }
         public int window_height { get; set; }
-        public PantheonTerminalWindowState window_state { get; set; }
+        public DroppyWindowState window_state { get; set; }
         public string tabs { get; set; }
         public int opening_x { get; set; }
         public int opening_y { get; set; }
 
         public SavedState () {
-            base ("org.elementary.PantheonTerminal.SavedState");
+            base ("org.elementary.droppy.SavedState");
         }
     }
 
@@ -61,7 +61,7 @@ namespace PantheonTerminal {
         public string font {get; set;}
 
         public Settings ()  {
-            base ("org.elementary.PantheonTerminal.Settings");
+            base ("org.elementary.droppy.Settings");
         }
     }
 }

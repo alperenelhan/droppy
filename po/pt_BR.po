@@ -1,11 +1,11 @@
-# Brazilian Portuguese translation for pantheon-terminal
+# Brazilian Portuguese translation for droppy
 # Copyright (c) 2011 Rosetta Contributors and Canonical Ltd 2011
-# This file is distributed under the same license as the pantheon-terminal package.
+# This file is distributed under the same license as the droppy package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2011.
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: pantheon-terminal\n"
+"Project-Id-Version: droppy\n"
 "Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
 "POT-Creation-Date: 2012-09-13 00:25+0100\n"
 "PO-Revision-Date: 2012-09-13 05:32+0000\n"
@@ -17,143 +17,143 @@ msgstr ""
 "X-Launchpad-Export-Date: 2012-09-15 05:16+0000\n"
 "X-Generator: Launchpad (build 15944)\n"
 
-#: /home/david/src/pantheon-terminal/po/../src/config.vala:12
+#: /home/david/src/droppy/po/../src/config.vala:12
 msgid "Use the command line"
 msgstr "Usar a linha de comando"
 
-#: /home/david/src/pantheon-terminal/po/../src/config.vala:13
-#: /home/david/src/pantheon-terminal/po/../src/PantheonTerminalWindow.vala:100
-#: /home/david/src/pantheon-terminal/po/../src/PantheonTerminalWindow.vala:345
-#: /home/david/src/pantheon-terminal/po/../src/PantheonTerminalWindow.vala:349
+#: /home/david/src/droppy/po/../src/config.vala:13
+#: /home/david/src/droppy/po/../src/DroppyWindow.vala:100
+#: /home/david/src/droppy/po/../src/DroppyWindow.vala:345
+#: /home/david/src/droppy/po/../src/DroppyWindow.vala:349
 msgid "Terminal"
 msgstr "Terminal"
 
-#: /home/david/src/pantheon-terminal/po/../src/config.vala:14
-#: /home/david/src/pantheon-terminal/po/../src/PantheonTerminalWindow.vala:503
+#: /home/david/src/droppy/po/../src/config.vala:14
+#: /home/david/src/droppy/po/../src/DroppyWindow.vala:503
 msgid "New Window"
 msgstr "Nova janela"
 
-#: /home/david/src/pantheon-terminal/po/../src/config.vala:15
+#: /home/david/src/droppy/po/../src/config.vala:15
 msgid "New Root Window"
 msgstr "Nova Janela root"
 
-#: /home/david/src/pantheon-terminal/po/../src/PantheonTerminal.vala:99
+#: /home/david/src/droppy/po/../src/Droppy.vala:99
 msgid "Set shell at launch"
 msgstr "Definir interface ao iniciar"
 
-#: /home/david/src/pantheon-terminal/po/../src/PantheonTerminalWindow.vala:215
+#: /home/david/src/droppy/po/../src/DroppyWindow.vala:215
 msgid "Open a new tab"
 msgstr "Abrir uma nova aba"
 
-#: /home/david/src/pantheon-terminal/po/../src/PantheonTerminalWindow.vala:501
+#: /home/david/src/droppy/po/../src/DroppyWindow.vala:501
 msgid "Quit"
 msgstr "Sair"
 
-#: /home/david/src/pantheon-terminal/po/../src/PantheonTerminalWindow.vala:502
+#: /home/david/src/droppy/po/../src/DroppyWindow.vala:502
 msgid "Close"
 msgstr "Fechar"
 
-#: /home/david/src/pantheon-terminal/po/../src/PantheonTerminalWindow.vala:503
+#: /home/david/src/droppy/po/../src/DroppyWindow.vala:503
 msgid "Open a new window"
 msgstr "Abrir uma nova janela"
 
-#: /home/david/src/pantheon-terminal/po/../src/PantheonTerminalWindow.vala:505
+#: /home/david/src/droppy/po/../src/DroppyWindow.vala:505
 msgid "New Tab"
 msgstr "Nova aba"
 
-#: /home/david/src/pantheon-terminal/po/../src/PantheonTerminalWindow.vala:505
+#: /home/david/src/droppy/po/../src/DroppyWindow.vala:505
 msgid "Create a new tab"
 msgstr "Criar uma nova aba"
 
-#: /home/david/src/pantheon-terminal/po/../src/PantheonTerminalWindow.vala:506
+#: /home/david/src/droppy/po/../src/DroppyWindow.vala:506
 msgid "Copy"
 msgstr "Copiar"
 
-#: /home/david/src/pantheon-terminal/po/../src/PantheonTerminalWindow.vala:506
+#: /home/david/src/droppy/po/../src/DroppyWindow.vala:506
 msgid "Copy the selected text"
 msgstr "Copiar o texto selecionado"
 
-#: /home/david/src/pantheon-terminal/po/../src/PantheonTerminalWindow.vala:507
+#: /home/david/src/droppy/po/../src/DroppyWindow.vala:507
 msgid "Paste"
 msgstr "Colar"
 
-#: /home/david/src/pantheon-terminal/po/../src/PantheonTerminalWindow.vala:507
+#: /home/david/src/droppy/po/../src/DroppyWindow.vala:507
 msgid "Paste some text"
 msgstr "Colar algum texto"
 
-#: /home/david/src/pantheon-terminal/po/../src/PantheonTerminalWindow.vala:508
+#: /home/david/src/droppy/po/../src/DroppyWindow.vala:508
 msgid "Select All"
 msgstr "Selecionar tudo"
 
-#: /home/david/src/pantheon-terminal/po/../src/PantheonTerminalWindow.vala:509
+#: /home/david/src/droppy/po/../src/DroppyWindow.vala:509
 msgid "Select all the text in the terminal"
 msgstr "Selecionar todo texto no terminal"
 
-#: /home/david/src/pantheon-terminal/po/../src/PantheonTerminalWindow.vala:510
+#: /home/david/src/droppy/po/../src/DroppyWindow.vala:510
 msgid "About"
 msgstr "Sobre"
 
-#: /home/david/src/pantheon-terminal/po/../src/PantheonTerminalWindow.vala:510
+#: /home/david/src/droppy/po/../src/DroppyWindow.vala:510
 msgid "Show about window"
 msgstr "Mostrar a janela sobre"
 
-#: /home/david/src/pantheon-terminal/po/../src/PantheonTerminalWindow.vala:512
+#: /home/david/src/droppy/po/../src/DroppyWindow.vala:512
 msgid "Next Tab"
 msgstr "Próxima Aba"
 
-#: /home/david/src/pantheon-terminal/po/../src/PantheonTerminalWindow.vala:512
+#: /home/david/src/droppy/po/../src/DroppyWindow.vala:512
 msgid "Go to next tab"
 msgstr "Ir para próxima aba"
 
-#: /home/david/src/pantheon-terminal/po/../src/PantheonTerminalWindow.vala:513
+#: /home/david/src/droppy/po/../src/DroppyWindow.vala:513
 msgid "Previous Tab"
 msgstr "Aba Anterior"
 
-#: /home/david/src/pantheon-terminal/po/../src/PantheonTerminalWindow.vala:513
+#: /home/david/src/droppy/po/../src/DroppyWindow.vala:513
 msgid "Go to previous tab"
 msgstr "Ir para aba anterior"
 
-#: /home/david/src/pantheon-terminal/po/../src/PantheonTerminalWindow.vala:515
+#: /home/david/src/droppy/po/../src/DroppyWindow.vala:515
 msgid "Fullscreen"
 msgstr "Tela cheia"
 
-#: /home/david/src/pantheon-terminal/po/../src/PantheonTerminalWindow.vala:515
+#: /home/david/src/droppy/po/../src/DroppyWindow.vala:515
 msgid "Toggle/Untoggle fullscreen"
 msgstr "Habilitar/Desabilitar tela cheia"
 
-#: /home/david/src/pantheon-terminal/po/../src/ForegroundProcessDialog.vala:29
+#: /home/david/src/droppy/po/../src/ForegroundProcessDialog.vala:29
 msgid "Are you sure you want to close this tab?"
 msgstr "Você tem certeza que deseja fechar esta aba ?"
 
-#: /home/david/src/pantheon-terminal/po/../src/ForegroundProcessDialog.vala:30
+#: /home/david/src/droppy/po/../src/ForegroundProcessDialog.vala:30
 msgid "There is an active process on this tab."
 msgstr "Há um processo ativo nesta aba."
 
-#: /home/david/src/pantheon-terminal/po/../src/ForegroundProcessDialog.vala:31
+#: /home/david/src/droppy/po/../src/ForegroundProcessDialog.vala:31
 msgid "If you close this tab, this process will end."
 msgstr "Se você fechar esta aba, o processo será finalizado."
 
-#: /home/david/src/pantheon-terminal/po/../src/ForegroundProcessDialog.vala:33
-#: /home/david/src/pantheon-terminal/po/../src/ForegroundProcessDialog.vala:52
+#: /home/david/src/droppy/po/../src/ForegroundProcessDialog.vala:33
+#: /home/david/src/droppy/po/../src/ForegroundProcessDialog.vala:52
 msgid "Cancel"
 msgstr "Cancelar"
 
-#: /home/david/src/pantheon-terminal/po/../src/ForegroundProcessDialog.vala:37
+#: /home/david/src/droppy/po/../src/ForegroundProcessDialog.vala:37
 msgid "Close Tab"
 msgstr "Fechar aba"
 
-#: /home/david/src/pantheon-terminal/po/../src/ForegroundProcessDialog.vala:48
+#: /home/david/src/droppy/po/../src/ForegroundProcessDialog.vala:48
 msgid "Are you sure you want to quit Terminal?"
 msgstr "Tem certeza de que deseja sair do terminal ?"
 
-#: /home/david/src/pantheon-terminal/po/../src/ForegroundProcessDialog.vala:49
+#: /home/david/src/droppy/po/../src/ForegroundProcessDialog.vala:49
 msgid "There is an active process on this terminal."
 msgstr "Há um processo ativo no terminal"
 
-#: /home/david/src/pantheon-terminal/po/../src/ForegroundProcessDialog.vala:50
+#: /home/david/src/droppy/po/../src/ForegroundProcessDialog.vala:50
 msgid "If you quit Terminal, this process will end."
 msgstr "Se você sair do terminal, este processo será finalizado."
 
-#: /home/david/src/pantheon-terminal/po/../src/ForegroundProcessDialog.vala:56
+#: /home/david/src/droppy/po/../src/ForegroundProcessDialog.vala:56
 msgid "Quit Terminal"
 msgstr "Sair do terminal"

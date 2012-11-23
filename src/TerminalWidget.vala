@@ -20,14 +20,14 @@
 
 using Vte;
 
-namespace PantheonTerminal {
+namespace Droppy {
 
     public class TerminalWidget : Vte.Terminal {
 
-        public PantheonTerminalApp app;
+        public DroppyApp app;
 
         GLib.Pid child_pid;
-        private PantheonTerminalWindow window;
+        private DroppyWindow window;
         public Granite.Widgets.Tab tab;
         public string? uri;
 
@@ -39,7 +39,7 @@ namespace PantheonTerminal {
                                               |svn\+ssh|hg|mailto|magnet):\/?)?(\~|\/\/?[!-~]+)+\/?""";
 
         public TerminalWidget (Gtk.ActionGroup main_actions, Gtk.UIManager ui,
-                               PantheonTerminalWindow parent_window) {
+                               DroppyWindow parent_window) {
 
             /* Set up the parents */
             this.window = parent_window;

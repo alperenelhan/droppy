@@ -24,11 +24,11 @@ using Vte;
 using Granite;
 using Pango;
 
-namespace PantheonTerminal {
+namespace Droppy {
 
-    public class PantheonTerminalWindow : Gtk.Window {
+    public class DroppyWindow : Gtk.Window {
 
-        public PantheonTerminalApp app;
+        public DroppyApp app;
 
         public Granite.Widgets.DynamicNotebook notebook;
         FontDescription term_font;
@@ -78,16 +78,16 @@ namespace PantheonTerminal {
         //variable indicating that a tab might has been closed by exit command
         bool closed_by_exit;
 
-        public PantheonTerminalWindow (Granite.Application app) {
-            this.app = app as PantheonTerminalApp;
+        public DroppyWindow (Granite.Application app) {
+            this.app = app as DroppyApp;
             set_application (app);
             init ();
         }
 
-        public PantheonTerminalWindow.with_coords (Granite.Application app, int x, int y,
+        public DroppyWindow.with_coords (Granite.Application app, int x, int y,
                                                    bool should_recreate_tabs = true) {
 
-            this.app = app as PantheonTerminalApp;
+            this.app = app as DroppyApp;
             set_application (app);
             this.move (x, y);
             init (should_recreate_tabs, false);
@@ -107,7 +107,7 @@ namespace PantheonTerminal {
 
             /* Actions and UIManager */
             main_actions = new Gtk.ActionGroup ("MainActionGroup");
-            main_actions.set_translation_domain ("pantheon-terminal");
+            main_actions.set_translation_domain ("droppy");
             main_actions.add_actions (main_entries, this);
 
             clipboard = Gtk.Clipboard.get (Gdk.Atom.intern ("CLIPBOARD", false));
@@ -122,7 +122,7 @@ namespace PantheonTerminal {
                 error ("Couldn't load the UI: %s", e.message);
             }
 
-            Notify.init ("pantheon-terminal");
+            Notify.init ("droppy");
             //new Notify.Notification ("Bye Process", "p finished","utilities-terminal").show ();
 
             Gtk.AccelGroup accel_group = ui.get_accel_group ();
@@ -261,8 +261,8 @@ namespace PantheonTerminal {
         }
 
         private void restore_saved_state (bool restore_pos = true) {
-            default_width = PantheonTerminal.saved_state.window_width;
-            default_height = PantheonTerminal.saved_state.window_height;
+            default_width = Droppy.saved_state.window_width;
+            default_height = Droppy.saved_state.window_height;
 
             if (restore_pos) {
                 int x = saved_state.opening_x;
@@ -277,9 +277,9 @@ namespace PantheonTerminal {
                 }
             }
 
-            if (PantheonTerminal.saved_state.window_state == PantheonTerminalWindowState.MAXIMIZED)
+            if (Droppy.saved_state.window_state == DroppyWindowState.MAXIMIZED)
                 maximize ();
-            else if (PantheonTerminal.saved_state.window_state == PantheonTerminalWindowState.FULLSCREEN)
+            else if (Droppy.saved_state.window_state == DroppyWindowState.FULLSCREEN)
                 fullscreen ();
         }
 
@@ -313,18 +313,18 @@ namespace PantheonTerminal {
         private void update_saved_state () {
             /* Save window state */
             if ((get_window ().get_state () & WindowState.MAXIMIZED) != 0)
-                PantheonTerminal.saved_state.window_state = PantheonTerminalWindowState.MAXIMIZED;
+                Droppy.saved_state.window_state = DroppyWindowState.MAXIMIZED;
             else if ((get_window ().get_state () & WindowState.FULLSCREEN) != 0)
-                PantheonTerminal.saved_state.window_state = PantheonTerminalWindowState.FULLSCREEN;
+                Droppy.saved_state.window_state = DroppyWindowState.FULLSCREEN;
             else
-                PantheonTerminal.saved_state.window_state = PantheonTerminalWindowState.NORMAL;
+                Droppy.saved_state.window_state = DroppyWindowState.NORMAL;
 
             /* Save window size */
-            if (PantheonTerminal.saved_state.window_state == PantheonTerminalWindowState.NORMAL) {
+            if (Droppy.saved_state.window_state == DroppyWindowState.NORMAL) {
                 int width, height;
                 get_size (out width, out height);
-                PantheonTerminal.saved_state.window_width = width;
-                PantheonTerminal.saved_state.window_height = height;
+                Droppy.saved_state.window_width = width;
+                Droppy.saved_state.window_height = height;
             }
 
             saved_state.tabs  = "";
