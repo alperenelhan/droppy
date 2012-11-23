@@ -5,7 +5,7 @@ Droppy is a fork of [Pantheon Terminal][PT] focussed on drop-down usage.
 
 ## Inspirations
 
-- Since it is a fork of [Pantheon Terminal][PT] [Droppy][d]'s features come from there.
+- Since [Droppy][d] is a fork of [Pantheon Terminal][PT] it's features come from there.
 - Drop Down usage from [Guake][G].
 
 
