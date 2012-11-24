@@ -31,6 +31,7 @@ namespace Droppy {
 
         public GLib.List <DroppyWindow> windows;
 
+        private static KeybindingManager key_manager;
         static string app_cmd_name;
         static string app_shell_name;
         static bool print_version;
@@ -85,6 +86,16 @@ namespace Droppy {
             new_window ();
         }
 
+        public static void toggleView() {
+
+        }
+
+        public static void bind_global_keys() {
+            key_manager = new KeybindingManager();
+            key_manager.init();
+            key_manager.bind("F12", toggleView);
+        }
+
         public void new_window () {
             var window = new DroppyWindow (this);
             window.show ();
@@ -106,7 +117,9 @@ namespace Droppy {
         };
 
         public static int main (string[] args) {
+            bind_global_keys();
             app_cmd_name = "Droppy";
+
 
             var context = new OptionContext ("File");
             context.add_main_entries (entries, "droppy");

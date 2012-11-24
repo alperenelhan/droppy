@@ -47,6 +47,7 @@ vala_precompile(VALA_C
     src/TerminalWidget.vala
     src/ForegroundProcessDialog.vala
     src/config.vala
+    src/KeybindingManager.vala
 PACKAGES
     vte-2.90
     granite
@@ -54,6 +55,10 @@ PACKAGES
     libnotify
     gdk-3.0
     posix
+    x11
+    gdk-x11-3.0
+    gee-1.0
+    xtst
 OPTIONS
     --thread
     --vapidir=${CMAKE_CURRENT_SOURCE_DIR}/vapi/
