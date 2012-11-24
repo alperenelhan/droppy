@@ -119,7 +119,6 @@ namespace Droppy {
         public static int main (string[] args) {
             app_cmd_name = "Droppy";
 
-
             var context = new OptionContext ("File");
             context.add_main_entries (entries, "droppy");
             context.add_group (Gtk.get_option_group (true));

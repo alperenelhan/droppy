@@ -101,7 +101,7 @@ namespace Droppy {
 
             closed_by_exit = true;
 
-            Gtk.Settings.get_default ().gtk_application_prefer_dark_theme = true;
+            Gtk.Settings.get_default ().gtk_application_prefer_dark_theme = false;
             title = _("Terminal");
             restore_saved_state (restore_pos);
 
@@ -148,9 +148,20 @@ namespace Droppy {
             notebook.show_icons = false;
             notebook.tab_switched.connect (on_switch_page);
             notebook.tab_moved.connect (on_tab_moved);
+            notebook.allow_drag = false;
             notebook.allow_new_window = true;
             notebook.allow_duplication = false;
             notebook.margin_top = 3;
+
+            // var css_provider = new Gtk.CssProvider();
+            // css_provider.load_from_path("/usr/share/themes/elementary/gtk-3.0/gtk.css");
+            // var scr_test = Gdk.Screen.get_default();
+            // var style_context = notebook.get_style_context();
+            // style_context.add_provider_for_screen(scr_test, css_provider, Gtk.STYLE_PROVIDER_PRIORITY_THEME);
+
+            // notebook.get_style_context ().add_class ("notebook");
+
+            set_decorated (false);
 
             notebook.tab_added.connect ((tab) => {
                 new_tab ("", tab);
