@@ -31,7 +31,7 @@ namespace Droppy {
 
         public GLib.List <DroppyWindow> windows;
 
-        private static KeybindingManager key_manager;
+        private static Droppy.KeybindingManager key_manager;
         static string app_cmd_name;
         static string app_shell_name;
         static bool print_version;
@@ -91,7 +91,7 @@ namespace Droppy {
         }
 
         public static void bind_global_keys() {
-            key_manager = new KeybindingManager();
+            key_manager = new Droppy.KeybindingManager();
             key_manager.init();
             key_manager.bind("F12", toggleView);
         }
