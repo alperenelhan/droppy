@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2012-11-24 16:59+0200\n"
+"POT-Creation-Date: 2012-11-24 19:20+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,106 +17,97 @@ msgstr ""
 "Content-Type: text/plain; charset=CHARSET\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: /home/nepjua/workspace/term/droppy/po/../src/Droppy.vala:116
+#: /home/nepjua/workspace/term/droppy/po/../src/Droppy.vala:117
 msgid "Set shell at launch"
 msgstr ""
 
 #: /home/nepjua/workspace/term/droppy/po/../src/DroppyWindow.vala:105
-#: /home/nepjua/workspace/term/droppy/po/../src/DroppyWindow.vala:392
-#: /home/nepjua/workspace/term/droppy/po/../src/DroppyWindow.vala:396
+#: /home/nepjua/workspace/term/droppy/po/../src/DroppyWindow.vala:401
+#: /home/nepjua/workspace/term/droppy/po/../src/DroppyWindow.vala:405
 msgid "Terminal"
 msgstr ""
 
-#: /home/nepjua/workspace/term/droppy/po/../src/DroppyWindow.vala:261
+#: /home/nepjua/workspace/term/droppy/po/../src/DroppyWindow.vala:270
 msgid "Open a new tab"
 msgstr ""
 
-#: /home/nepjua/workspace/term/droppy/po/../src/DroppyWindow.vala:556
+#: /home/nepjua/workspace/term/droppy/po/../src/DroppyWindow.vala:565
 msgid "Quit"
 msgstr ""
 
-#: /home/nepjua/workspace/term/droppy/po/../src/DroppyWindow.vala:558
+#: /home/nepjua/workspace/term/droppy/po/../src/DroppyWindow.vala:567
 msgid "Close"
 msgstr ""
 
-#: /home/nepjua/workspace/term/droppy/po/../src/DroppyWindow.vala:561
-#: /home/nepjua/workspace/term/droppy/po/../src/config.vala:14
-msgid "New Window"
-msgstr ""
-
-#: /home/nepjua/workspace/term/droppy/po/../src/DroppyWindow.vala:561
-msgid "Open a new window"
-msgstr ""
-
-#: /home/nepjua/workspace/term/droppy/po/../src/DroppyWindow.vala:564
+#: /home/nepjua/workspace/term/droppy/po/../src/DroppyWindow.vala:573
 msgid "New Tab"
 msgstr ""
 
-#: /home/nepjua/workspace/term/droppy/po/../src/DroppyWindow.vala:564
+#: /home/nepjua/workspace/term/droppy/po/../src/DroppyWindow.vala:573
 msgid "Create a new tab"
 msgstr ""
 
-#: /home/nepjua/workspace/term/droppy/po/../src/DroppyWindow.vala:567
+#: /home/nepjua/workspace/term/droppy/po/../src/DroppyWindow.vala:576
 msgid "Copy"
 msgstr ""
 
-#: /home/nepjua/workspace/term/droppy/po/../src/DroppyWindow.vala:567
+#: /home/nepjua/workspace/term/droppy/po/../src/DroppyWindow.vala:576
 msgid "Copy the selected text"
 msgstr ""
 
-#: /home/nepjua/workspace/term/droppy/po/../src/DroppyWindow.vala:570
+#: /home/nepjua/workspace/term/droppy/po/../src/DroppyWindow.vala:579
 msgid "Paste"
 msgstr ""
 
-#: /home/nepjua/workspace/term/droppy/po/../src/DroppyWindow.vala:570
+#: /home/nepjua/workspace/term/droppy/po/../src/DroppyWindow.vala:579
 msgid "Paste some text"
 msgstr ""
 
-#: /home/nepjua/workspace/term/droppy/po/../src/DroppyWindow.vala:573
+#: /home/nepjua/workspace/term/droppy/po/../src/DroppyWindow.vala:582
 msgid "Select All"
 msgstr ""
 
-#: /home/nepjua/workspace/term/droppy/po/../src/DroppyWindow.vala:574
+#: /home/nepjua/workspace/term/droppy/po/../src/DroppyWindow.vala:583
 msgid "Select all the text in the terminal"
 msgstr ""
 
-#: /home/nepjua/workspace/term/droppy/po/../src/DroppyWindow.vala:576
+#: /home/nepjua/workspace/term/droppy/po/../src/DroppyWindow.vala:585
 msgid "About"
 msgstr ""
 
-#: /home/nepjua/workspace/term/droppy/po/../src/DroppyWindow.vala:576
+#: /home/nepjua/workspace/term/droppy/po/../src/DroppyWindow.vala:585
 msgid "Show about window"
 msgstr ""
 
-#: /home/nepjua/workspace/term/droppy/po/../src/DroppyWindow.vala:578
+#: /home/nepjua/workspace/term/droppy/po/../src/DroppyWindow.vala:587
 msgid "Next Tab"
 msgstr ""
 
-#: /home/nepjua/workspace/term/droppy/po/../src/DroppyWindow.vala:578
+#: /home/nepjua/workspace/term/droppy/po/../src/DroppyWindow.vala:587
 msgid "Go to next tab"
 msgstr ""
 
-#: /home/nepjua/workspace/term/droppy/po/../src/DroppyWindow.vala:581
+#: /home/nepjua/workspace/term/droppy/po/../src/DroppyWindow.vala:590
 msgid "Previous Tab"
 msgstr ""
 
-#: /home/nepjua/workspace/term/droppy/po/../src/DroppyWindow.vala:581
+#: /home/nepjua/workspace/term/droppy/po/../src/DroppyWindow.vala:590
 msgid "Go to previous tab"
 msgstr ""
 
-#: /home/nepjua/workspace/term/droppy/po/../src/DroppyWindow.vala:584
+#: /home/nepjua/workspace/term/droppy/po/../src/DroppyWindow.vala:593
 msgid "Zoom in"
 msgstr ""
 
-#: /home/nepjua/workspace/term/droppy/po/../src/DroppyWindow.vala:587
+#: /home/nepjua/workspace/term/droppy/po/../src/DroppyWindow.vala:596
 msgid "Zoom out"
 msgstr ""
 
-#: /home/nepjua/workspace/term/droppy/po/../src/DroppyWindow.vala:590
+#: /home/nepjua/workspace/term/droppy/po/../src/DroppyWindow.vala:599
 msgid "Fullscreen"
 msgstr ""
 
-#: /home/nepjua/workspace/term/droppy/po/../src/DroppyWindow.vala:590
+#: /home/nepjua/workspace/term/droppy/po/../src/DroppyWindow.vala:599
 msgid "Toggle/Untoggle fullscreen"
 msgstr ""
 
@@ -126,6 +117,10 @@ msgstr ""
 
 #: /home/nepjua/workspace/term/droppy/po/../src/config.vala:13
 msgid "Droppy"
+msgstr ""
+
+#: /home/nepjua/workspace/term/droppy/po/../src/config.vala:14
+msgid "New Window"
 msgstr ""
 
 #: /home/nepjua/workspace/term/droppy/po/../src/config.vala:15

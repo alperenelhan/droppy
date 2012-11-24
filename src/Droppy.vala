@@ -29,12 +29,14 @@ namespace Droppy {
 
     public class DroppyApp : Granite.Application {
 
-        public GLib.List <DroppyWindow> windows;
+        public DroppyWindow window;
 
         private static Droppy.KeybindingManager key_manager;
         static string app_cmd_name;
         static string app_shell_name;
         static bool print_version;
+
+        public bool is_visible;
 
         public int minimum_width;
         public int minimum_height;
@@ -68,13 +70,12 @@ namespace Droppy {
             Logger.initialize ("Droppy");
             Logger.DisplayLevel = LogLevel.DEBUG;
 
-            windows = new GLib.List <DroppyWindow> ();
-
             saved_state = new SavedState ();
             settings = new Settings ();
         }
 
         protected override void activate () {
+            window = new DroppyWindow (this);
             if (app_shell_name != null) {
                 try {
                     GLib.Process.spawn_command_line_async ("gksu chsh -s " + app_shell_name);
@@ -83,31 +84,34 @@ namespace Droppy {
                     warning (e.message);
                 }
             }
-            new_window ();
-        }
 
-        public static void toggleView() {
-            print("labadaa");
-        }
-
-        public static void bind_global_keys() {
+            hideWindow();
             key_manager = new Droppy.KeybindingManager();
             key_manager.init();
-            key_manager.bind("V", toggleView);
+            key_manager.bind("F7", toggleView);
         }
 
-        public void new_window () {
-            var window = new DroppyWindow (this);
-            window.show ();
-            windows.append (window);
-            add_window (window);
+        public void showWindow() {
+            window.move(0,0);
+            window.resize(1366, 300);
+            window.set_focus_visible(true);
+            window.set_keep_above(true);
+            is_visible = true;
+            window.show();
         }
 
-        public void new_window_with_coords (int x, int y, bool should_recreate_tabs=true) {
-            var window = new DroppyWindow.with_coords (this, x, y, should_recreate_tabs);
-            window.show ();
-            windows.append (window);
-            add_window (window);
+        public void hideWindow() {
+            is_visible = false;
+            window.hide();
+        }
+
+        public void toggleView() {
+            if(is_visible) {
+                hideWindow();
+            }
+            else {
+                showWindow();
+            }
         }
 
         static const OptionEntry[] entries = {
@@ -136,9 +140,6 @@ namespace Droppy {
                 return 0;
             }
             var app = new DroppyApp ();
-
-            bind_global_keys();
-
             return app.run (args);
         }
     }

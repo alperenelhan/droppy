@@ -84,14 +84,14 @@ namespace Droppy {
             init ();
         }
 
-        public DroppyWindow.with_coords (Granite.Application app, int x, int y,
-                                                   bool should_recreate_tabs = true) {
+        // public DroppyWindow.with_coords (Granite.Application app, int x, int y,
+        //                                            bool should_recreate_tabs = true) {
 
-            this.app = app as DroppyApp;
-            set_application (app);
-            this.move (x, y);
-            init (should_recreate_tabs, false);
-        }
+        //     this.app = app as DroppyApp;
+        //     set_application (app);
+        //     this.move (x, y);
+        //     init (should_recreate_tabs, false);
+        // }
 
         private void init (bool recreate_tabs=true, bool restore_pos = true) {
             this.icon_name = "utilities-terminal";
@@ -147,9 +147,9 @@ namespace Droppy {
             notebook = new Granite.Widgets.DynamicNotebook ();
             notebook.show_icons = false;
             notebook.tab_switched.connect (on_switch_page);
-            notebook.tab_moved.connect (on_tab_moved);
-            notebook.allow_drag = false;
-            notebook.allow_new_window = true;
+            // notebook.tab_moved.connect (on_tab_moved);
+            notebook.allow_drag = true;
+            notebook.allow_new_window = false;
             notebook.allow_duplication = false;
             notebook.margin_top = 3;
 
@@ -294,22 +294,22 @@ namespace Droppy {
                 fullscreen ();
         }
 
-        private void on_tab_moved (Granite.Widgets.Tab tab, int new_pos, bool new_window, int x, int y) {
-            if (new_window) {
-                app.new_window_with_coords (x, y, false);
-                var win = app.windows.last ().data;
-                //win.move (x, y);
+        // private void on_tab_moved (Granite.Widgets.Tab tab, int new_pos, bool new_window, int x, int y) {
+        //     if (new_window) {
+        //         app.new_window_with_coords (x, y, false);
+        //         var win = app.windows.last ().data;
+        //         //win.move (x, y);
 
-                var n = win.notebook;
-                //remove the one automatically created after inserting
-                n.insert_tab (tab, -1);
-                n.remove_tab (n.tabs.nth_data (1));
+        //         var n = win.notebook;
+        //         //remove the one automatically created after inserting
+        //         n.insert_tab (tab, -1);
+        //         n.remove_tab (n.tabs.nth_data (1));
 
-                //notebook.remove_tab (tab);
-                if (notebook.n_tabs == 0)
-                    destroy ();
-            }
-        }
+        //         //notebook.remove_tab (tab);
+        //         if (notebook.n_tabs == 0)
+        //             destroy ();
+        //     }
+        // }
 
         private void update_context_menu () {
             clipboard.request_targets (update_context_menu_cb);
@@ -516,9 +516,9 @@ namespace Droppy {
             terminals.remove (current_terminal);
         }
 
-        void action_new_window () {
-            app.new_window ();
-        }
+        // void action_new_window () {
+        //     app.new_window ();
+        // }
 
         void action_new_tab () {
             if (settings.follow_last_tab)
@@ -567,8 +567,8 @@ namespace Droppy {
             { "CloseTab", Gtk.Stock.CLOSE, N_("Close"), "<Control><Shift>w", N_("Close"),
               action_close_tab },
 
-            { "New window", "window-new", N_("New Window"), "<Control><Shift>n", N_("Open a new window"),
-              action_new_window },
+            // { "New window", "window-new", N_("New Window"), "<Control><Shift>n", N_("Open a new window"),
+            //   action_new_window },
 
             { "New tab", Gtk.Stock.NEW, N_("New Tab"), "<Control><Shift>t", N_("Create a new tab"),
               action_new_tab },
