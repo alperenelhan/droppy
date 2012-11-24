@@ -87,13 +87,13 @@ namespace Droppy {
         }
 
         public static void toggleView() {
-
+            print("labadaa");
         }
 
         public static void bind_global_keys() {
             key_manager = new Droppy.KeybindingManager();
             key_manager.init();
-            key_manager.bind("F12", toggleView);
+            key_manager.bind("V", toggleView);
         }
 
         public void new_window () {
@@ -117,7 +117,6 @@ namespace Droppy {
         };
 
         public static int main (string[] args) {
-            bind_global_keys();
             app_cmd_name = "Droppy";
 
 
@@ -138,6 +137,9 @@ namespace Droppy {
                 return 0;
             }
             var app = new DroppyApp ();
+
+            bind_global_keys();
+
             return app.run (args);
         }
     }
