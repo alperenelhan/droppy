@@ -184,15 +184,15 @@ namespace Droppy {
         }
 
 
-        public int calculate_width (int column_count) {
-            int width = (int) (this.get_char_width()) * column_count;
-            return width;
-        }
+        // public int calculate_width (int column_count) {
+        //     int width = (int) (this.get_char_width()) * column_count;
+        //     return width;
+        // }
 
-        public int calculate_height (int row_count) {
-            int height = (int) (this.get_char_height()) * row_count;
-            return height;
-        }
+        // public int calculate_height (int row_count) {
+        //     int height = (int) (this.get_char_height()) * row_count;
+        //     return height;
+        // }
 
         private void clickable (string str) {
             try {

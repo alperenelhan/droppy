@@ -28,6 +28,9 @@ namespace Droppy {
 
     public class DroppyWindow : Gtk.Window {
 
+        public Gdk.Display display;
+        public Gdk.Screen screen;
+
         public DroppyApp app;
 
         public Granite.Widgets.DynamicNotebook notebook;
@@ -94,6 +97,8 @@ namespace Droppy {
         // }
 
         private void init (bool recreate_tabs=true, bool restore_pos = true) {
+            this.screen = this.get_screen();
+            this.display = screen.get_display();
             this.icon_name = "utilities-terminal";
 
             Notify.init (app.program_name);
@@ -139,7 +144,7 @@ namespace Droppy {
             if (recreate_tabs)
                 open_tabs ();
 
-            set_size_request (app.minimum_width, app.minimum_height);
+            // set_size_request (app.minimum_width, app.minimum_height);
         }
 
         private void setup_ui () {
@@ -440,11 +445,11 @@ namespace Droppy {
 
             t.set_font (term_font);
 
-            int minimum_width = t.calculate_width (80);
-            int minimum_height = t.calculate_height (24);
-            set_size_request (minimum_width, minimum_height);
-            app.minimum_width = minimum_width;
-            app.minimum_height = minimum_height;
+            // int minimum_width = t.calculate_width (80);
+            // int minimum_height = t.calculate_height (24);
+            // set_size_request (minimum_width, minimum_height);
+            // app.minimum_width = minimum_width;
+            // app.minimum_height = minimum_height;
 
             terminals.append (t);
 
@@ -552,6 +557,7 @@ namespace Droppy {
         }
 
         void action_fullscreen () {
+            print("action_fulscreen");
             if (is_fullscreen) {
                 unfullscreen();
                 is_fullscreen = false;

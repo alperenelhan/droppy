@@ -39,8 +39,13 @@ namespace Droppy {
 
         public bool is_visible;
 
-        public int minimum_width;
-        public int minimum_height;
+        public int default_width;
+        public int default_height;
+        public int max_width;
+        public int max_height;
+
+        // public int minimum_width;
+        // public int minimum_height;
 
         construct {
             print_version = false;
@@ -99,11 +104,20 @@ namespace Droppy {
             key_manager = new KeybindingManager();
             key_manager.init();
             key_manager.bind("F8", toggleView);
+
+            max_width = window.screen.get_width();
+            max_height = window.screen.get_height();
+
+            default_width = max_width;
+            default_height = (int) (max_height * 0.45);
+            // print("max_res: %d %d".printf(max_width, max_height));
+            // print("default_res: %d %d".printf(default_width, default_height));
         }
 
         public void showWindow() {
             window.move(0,0);
-            window.resize(1920, 400);
+            // print("resizing: %d %d".printf(default_width, default_height));
+            window.resize(default_width, default_height);
             is_visible = true;
             window.show();
             window.set_keep_above(true);
@@ -130,6 +144,7 @@ namespace Droppy {
         };
 
         public static int main (string[] args) {
+            Gtk.init(ref args);
             app_cmd_name = "Droppy";
 
             var context = new OptionContext ("File");
