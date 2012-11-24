@@ -30,8 +30,9 @@ namespace Droppy {
     public class DroppyApp : Granite.Application {
 
         public DroppyWindow window;
+        private static DroppyApp _instance;
 
-        private static Droppy.KeybindingManager key_manager;
+        private static KeybindingManager key_manager;
         static string app_cmd_name;
         static string app_shell_name;
         static bool print_version;
@@ -62,8 +63,16 @@ namespace Droppy {
             about_authors = { "Osman Alperen Elhan <alperen@elhan.org£",
                               "Ahmet Yasin Uslu <nepjua@gmail.com" };
 
-            // about_translators = "Launchpad Translators";
             about_license_type = License.GPL_3_0;
+        }
+
+        public static DroppyApp instance {
+            get {
+                if (_instance == null) {
+                    _instance = new DroppyApp ();
+                }
+                return _instance;
+            }
         }
 
         public DroppyApp () {
@@ -73,6 +82,7 @@ namespace Droppy {
             saved_state = new SavedState ();
             settings = new Settings ();
         }
+
 
         protected override void activate () {
             window = new DroppyWindow (this);
@@ -86,18 +96,17 @@ namespace Droppy {
             }
 
             hideWindow();
-            key_manager = new Droppy.KeybindingManager();
+            key_manager = new KeybindingManager();
             key_manager.init();
-            key_manager.bind("F7", toggleView);
+            key_manager.bind("F8", toggleView);
         }
 
         public void showWindow() {
             window.move(0,0);
-            window.resize(1366, 300);
-            window.set_focus_visible(true);
-            window.set_keep_above(true);
+            window.resize(1920, 400);
             is_visible = true;
             window.show();
+            window.set_keep_above(true);
         }
 
         public void hideWindow() {
@@ -139,8 +148,7 @@ namespace Droppy {
                 stdout.printf ("Copyright 2011-2012 Terminal Developers.\n");
                 return 0;
             }
-            var app = new DroppyApp ();
-            return app.run (args);
+            return DroppyApp.instance.run (args);
         }
     }
 } // Namespace

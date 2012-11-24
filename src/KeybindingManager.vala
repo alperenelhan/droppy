@@ -189,19 +189,6 @@ namespace Droppy {
                     modifierykey = 0xffe1;
                     break;
             }
-            int modifiercode = display.keysym_to_keycode(modifierykey);
-
-            if(keycode != 0) {
-
-                if(modifiercode != 0) {
-                    XTest.fake_key_event(display, modifiercode, press, delay);
-                }
-
-                XTest.fake_key_event(display, keycode, press, delay);
-
-                return true;
-            }
-
             return false;
         }
 
