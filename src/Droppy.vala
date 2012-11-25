@@ -94,6 +94,9 @@ namespace Droppy {
             if (window == null) {
                 build ();
             }
+            else {
+                showWindow();
+            }
         }
 
         private void build () {
