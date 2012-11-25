@@ -91,6 +91,12 @@ namespace Droppy {
 
 
         protected override void activate () {
+            if (window == null) {
+                build ();
+            }
+        }
+
+        private void build () {
             window = new DroppyWindow (this);
             if (app_shell_name != null) {
                 try {
@@ -107,12 +113,13 @@ namespace Droppy {
                 }
                return true;
             });
-            window.skip_pager_hint = true;
-            window.skip_taskbar_hint = true;
-            is_visible = false;
             key_manager = new KeybindingManager();
             key_manager.init();
             key_manager.bind("F12", toggleView);
+            window.skip_pager_hint = true;
+            window.skip_taskbar_hint = true;
+            is_visible = false;
+
             max_width = window.screen.get_width();
             max_height = window.screen.get_height();
 
@@ -165,7 +172,6 @@ namespace Droppy {
 
             if (print_version) {
                 stdout.printf ("Droppy %s\n", Constants.VERSION);
-                stdout.printf ("Copyright 2011-2012 Droppy Developers.\n");
                 return 0;
             }
             return DroppyApp.instance.run (args);

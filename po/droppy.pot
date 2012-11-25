@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2012-11-25 20:50+0200\n"
+"POT-Creation-Date: 2012-11-26 00:35+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,13 +17,13 @@ msgstr ""
 "Content-Type: text/plain; charset=CHARSET\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: /home/oae/Development/personal/droppy/po/../src/Droppy.vala:148
+#: /home/oae/Development/personal/droppy/po/../src/Droppy.vala:146
 msgid "Set shell at launch"
 msgstr ""
 
-#: /home/oae/Development/personal/droppy/po/../src/DroppyWindow.vala:111
-#: /home/oae/Development/personal/droppy/po/../src/DroppyWindow.vala:407
-#: /home/oae/Development/personal/droppy/po/../src/DroppyWindow.vala:411
+#: /home/oae/Development/personal/droppy/po/../src/DroppyWindow.vala:115
+#: /home/oae/Development/personal/droppy/po/../src/DroppyWindow.vala:397
+#: /home/oae/Development/personal/droppy/po/../src/DroppyWindow.vala:401
 msgid "Terminal"
 msgstr ""
 
@@ -31,127 +31,127 @@ msgstr ""
 msgid "Open a new tab"
 msgstr ""
 
-#: /home/oae/Development/personal/droppy/po/../src/DroppyWindow.vala:567
+#: /home/oae/Development/personal/droppy/po/../src/DroppyWindow.vala:557
 msgid "Quit"
 msgstr ""
 
-#: /home/oae/Development/personal/droppy/po/../src/DroppyWindow.vala:569
+#: /home/oae/Development/personal/droppy/po/../src/DroppyWindow.vala:559
 msgid "Close"
 msgstr ""
 
-#: /home/oae/Development/personal/droppy/po/../src/DroppyWindow.vala:572
+#: /home/oae/Development/personal/droppy/po/../src/DroppyWindow.vala:562
 msgid "New Tab"
 msgstr ""
 
-#: /home/oae/Development/personal/droppy/po/../src/DroppyWindow.vala:572
+#: /home/oae/Development/personal/droppy/po/../src/DroppyWindow.vala:562
 msgid "Create a new tab"
 msgstr ""
 
-#: /home/oae/Development/personal/droppy/po/../src/DroppyWindow.vala:575
+#: /home/oae/Development/personal/droppy/po/../src/DroppyWindow.vala:565
 msgid "Copy"
 msgstr ""
 
-#: /home/oae/Development/personal/droppy/po/../src/DroppyWindow.vala:575
+#: /home/oae/Development/personal/droppy/po/../src/DroppyWindow.vala:565
 msgid "Copy the selected text"
 msgstr ""
 
-#: /home/oae/Development/personal/droppy/po/../src/DroppyWindow.vala:578
+#: /home/oae/Development/personal/droppy/po/../src/DroppyWindow.vala:568
 msgid "Paste"
 msgstr ""
 
-#: /home/oae/Development/personal/droppy/po/../src/DroppyWindow.vala:578
+#: /home/oae/Development/personal/droppy/po/../src/DroppyWindow.vala:568
 msgid "Paste some text"
 msgstr ""
 
-#: /home/oae/Development/personal/droppy/po/../src/DroppyWindow.vala:581
+#: /home/oae/Development/personal/droppy/po/../src/DroppyWindow.vala:571
 msgid "Select All"
 msgstr ""
 
-#: /home/oae/Development/personal/droppy/po/../src/DroppyWindow.vala:582
+#: /home/oae/Development/personal/droppy/po/../src/DroppyWindow.vala:572
 msgid "Select all the text in the terminal"
 msgstr ""
 
-#: /home/oae/Development/personal/droppy/po/../src/DroppyWindow.vala:584
+#: /home/oae/Development/personal/droppy/po/../src/DroppyWindow.vala:574
 msgid "About"
 msgstr ""
 
-#: /home/oae/Development/personal/droppy/po/../src/DroppyWindow.vala:584
+#: /home/oae/Development/personal/droppy/po/../src/DroppyWindow.vala:574
 msgid "Show about window"
 msgstr ""
 
-#: /home/oae/Development/personal/droppy/po/../src/DroppyWindow.vala:586
+#: /home/oae/Development/personal/droppy/po/../src/DroppyWindow.vala:576
 msgid "Next Tab"
 msgstr ""
 
-#: /home/oae/Development/personal/droppy/po/../src/DroppyWindow.vala:586
+#: /home/oae/Development/personal/droppy/po/../src/DroppyWindow.vala:576
 msgid "Go to next tab"
 msgstr ""
 
-#: /home/oae/Development/personal/droppy/po/../src/DroppyWindow.vala:589
+#: /home/oae/Development/personal/droppy/po/../src/DroppyWindow.vala:579
 msgid "Previous Tab"
 msgstr ""
 
-#: /home/oae/Development/personal/droppy/po/../src/DroppyWindow.vala:589
+#: /home/oae/Development/personal/droppy/po/../src/DroppyWindow.vala:579
 msgid "Go to previous tab"
 msgstr ""
 
-#: /home/oae/Development/personal/droppy/po/../src/DroppyWindow.vala:592
+#: /home/oae/Development/personal/droppy/po/../src/DroppyWindow.vala:582
 msgid "Zoom in"
 msgstr ""
 
-#: /home/oae/Development/personal/droppy/po/../src/DroppyWindow.vala:595
+#: /home/oae/Development/personal/droppy/po/../src/DroppyWindow.vala:585
 msgid "Zoom out"
 msgstr ""
 
-#: /home/oae/Development/personal/droppy/po/../src/DroppyWindow.vala:598
+#: /home/oae/Development/personal/droppy/po/../src/DroppyWindow.vala:588
 msgid "Fullscreen"
 msgstr ""
 
-#: /home/oae/Development/personal/droppy/po/../src/DroppyWindow.vala:598
+#: /home/oae/Development/personal/droppy/po/../src/DroppyWindow.vala:588
 msgid "Toggle/Untoggle fullscreen"
 msgstr ""
 
-#: /home/oae/Development/personal/droppy/po/../src/ForegroundProcessDialog.vala:29
+#: /home/oae/Development/personal/droppy/po/../src/ForegroundProcessDialog.vala:34
 msgid "Are you sure you want to close this tab?"
 msgstr ""
 
-#: /home/oae/Development/personal/droppy/po/../src/ForegroundProcessDialog.vala:30
+#: /home/oae/Development/personal/droppy/po/../src/ForegroundProcessDialog.vala:35
 msgid "There is an active process on this tab."
 msgstr ""
 
-#: /home/oae/Development/personal/droppy/po/../src/ForegroundProcessDialog.vala:31
+#: /home/oae/Development/personal/droppy/po/../src/ForegroundProcessDialog.vala:36
 msgid "If you close this tab, this process will end."
 msgstr ""
 
-#: /home/oae/Development/personal/droppy/po/../src/ForegroundProcessDialog.vala:33
-#: /home/oae/Development/personal/droppy/po/../src/ForegroundProcessDialog.vala:53
+#: /home/oae/Development/personal/droppy/po/../src/ForegroundProcessDialog.vala:38
+#: /home/oae/Development/personal/droppy/po/../src/ForegroundProcessDialog.vala:58
 msgid "Cancel"
 msgstr ""
 
-#: /home/oae/Development/personal/droppy/po/../src/ForegroundProcessDialog.vala:37
+#: /home/oae/Development/personal/droppy/po/../src/ForegroundProcessDialog.vala:42
 msgid "Close Tab"
 msgstr ""
 
-#: /home/oae/Development/personal/droppy/po/../src/ForegroundProcessDialog.vala:49
+#: /home/oae/Development/personal/droppy/po/../src/ForegroundProcessDialog.vala:54
 msgid "Are you sure you want to quit Terminal?"
 msgstr ""
 
-#: /home/oae/Development/personal/droppy/po/../src/ForegroundProcessDialog.vala:50
+#: /home/oae/Development/personal/droppy/po/../src/ForegroundProcessDialog.vala:55
 msgid "There is an active process on this terminal."
 msgstr ""
 
-#: /home/oae/Development/personal/droppy/po/../src/ForegroundProcessDialog.vala:51
+#: /home/oae/Development/personal/droppy/po/../src/ForegroundProcessDialog.vala:56
 msgid "If you quit Terminal, this process will end."
 msgstr ""
 
-#: /home/oae/Development/personal/droppy/po/../src/ForegroundProcessDialog.vala:57
+#: /home/oae/Development/personal/droppy/po/../src/ForegroundProcessDialog.vala:62
 msgid "Quit Terminal"
 msgstr ""
 
-#: /home/oae/Development/personal/droppy/po/../src/config.vala:12
+#: /home/oae/Development/personal/droppy/po/../src/config.vala:9
 msgid "Use the command line"
 msgstr ""
 
-#: /home/oae/Development/personal/droppy/po/../src/config.vala:13
+#: /home/oae/Development/personal/droppy/po/../src/config.vala:10
 msgid "Droppy"
 msgstr ""

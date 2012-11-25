@@ -241,17 +241,13 @@ namespace Droppy {
                         break;
                     case Gdk.Key.Page_Down:
                         if ((e.state & Gdk.ModifierType.CONTROL_MASK) != 0) {
-                            double next_position = (double) (get_current_tab_position()-1+this.notebook.n_tabs);
-                            double tab_count = (double) this.notebook.n_tabs;
-                            this.notebook.current = this.notebook.get_tab_by_index ((int) Math.fmod ( next_position, tab_count));
+                            action_previous_tab ();
                             return true;
                         }
                         break;
                     case Gdk.Key.Page_Up:
                         if ((e.state & Gdk.ModifierType.CONTROL_MASK) != 0) {
-                            double next_position = (double) (get_current_tab_position()+1);
-                            double tab_count = (double) this.notebook.n_tabs;
-                            this.notebook.current = this.notebook.get_tab_by_index ((int) Math.fmod ( next_position, tab_count));
+                            action_next_tab ();
                             return true;
                         }
                         break;
@@ -269,16 +265,6 @@ namespace Droppy {
             add_button.set_relief (ReliefStyle.NONE);
             add_button.set_tooltip_text (_("Open a new tab"));
             right_box.pack_start (add_button, false, false, 0);
-        }
-
-        private int get_current_tab_position () {
-            int number = 0;
-            foreach ( Granite.Widgets.Tab t in this.notebook.tabs ) {
-                if (t == current_tab )
-                    return number;
-                number++;
-            }
-            return number;
         }
 
         private void restore_saved_state (bool restore_pos = true) {
