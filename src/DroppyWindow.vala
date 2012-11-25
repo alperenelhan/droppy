@@ -48,7 +48,6 @@ namespace Droppy {
             <ui>
             <popup name="MenuItemTool">
                 <menuitem name="Quit" action="Quit"/>
-                <menuitem name="New window" action="New window"/>
                 <menuitem name="New tab" action="New tab"/>
                 <menuitem name="CloseTab" action="CloseTab"/>
                 <menuitem name="Copy" action="Copy"/>
@@ -71,6 +70,8 @@ namespace Droppy {
                 <menuitem name="Select All" action="Select All"/>
                 <separator />
                 <menuitem name="About" action="About"/>
+                <separator />
+                <menuitem name="Quit" action="Quit"/>
             </popup>
             </ui>
         """;
@@ -137,7 +138,6 @@ namespace Droppy {
             ui.ensure_update ();
 
             setup_ui ();
-            show_all ();
 
             term_font = FontDescription.from_string (get_term_font ());
 
@@ -183,7 +183,7 @@ namespace Droppy {
 
                         if (notebook.n_tabs - 1 == 0) {
                             update_saved_state ();
-                            destroy ();
+                            new_tab ();
                         }
 
                         d.destroy ();
@@ -197,7 +197,7 @@ namespace Droppy {
                 } else {
                     if (notebook.n_tabs - 1 == 0) {
                         update_saved_state ();
-                        tab.parent.parent.parent.destroy ();
+                        new_tab ();
                     }
                 }
 
@@ -235,30 +235,21 @@ namespace Droppy {
                         }
 
                         break;
-                    case Gdk.Key.@1: //alt+[1-8]
-                    case Gdk.Key.@2:
-                    case Gdk.Key.@3:
-                    case Gdk.Key.@4:
-                    case Gdk.Key.@5:
-                    case Gdk.Key.@6:
-                    case Gdk.Key.@7:
-                    case Gdk.Key.@8:
-                        if ((e.state & Gdk.ModifierType.MOD1_MASK) != 0) {
-                            var i = e.keyval - 49;
-                            if (i > this.notebook.n_tabs - 1)
-                                return false;
-
-                            this.notebook.current = this.notebook.get_tab_by_index ((int) i);
+                    case Gdk.Key.Page_Down:
+                        if ((e.state & Gdk.ModifierType.CONTROL_MASK) != 0) {
+                            double next_position = (double) (get_current_tab_position()-1+this.notebook.n_tabs);
+                            double tab_count = (double) this.notebook.n_tabs;
+                            this.notebook.current = this.notebook.get_tab_by_index ((int) Math.fmod ( next_position, tab_count));
                             return true;
                         }
-
                         break;
-                    case Gdk.Key.@9:
-                        if ((e.state & Gdk.ModifierType.MOD1_MASK) != 0) {
-                            notebook.current = notebook.get_tab_by_index (notebook.n_tabs - 1);
+                    case Gdk.Key.Page_Up:
+                        if ((e.state & Gdk.ModifierType.CONTROL_MASK) != 0) {
+                            double next_position = (double) (get_current_tab_position()+1);
+                            double tab_count = (double) this.notebook.n_tabs;
+                            this.notebook.current = this.notebook.get_tab_by_index ((int) Math.fmod ( next_position, tab_count));
                             return true;
                         }
-
                         break;
                 }
 
@@ -274,6 +265,16 @@ namespace Droppy {
             add_button.set_relief (ReliefStyle.NONE);
             add_button.set_tooltip_text (_("Open a new tab"));
             right_box.pack_start (add_button, false, false, 0);
+        }
+
+        private int get_current_tab_position () {
+            int number = 0;
+            foreach ( Granite.Widgets.Tab t in this.notebook.tabs ) {
+                if (t == current_tab )
+                    return number;
+                number++;
+            }
+            return number;
         }
 
         private void restore_saved_state (bool restore_pos = true) {
@@ -498,7 +499,7 @@ namespace Droppy {
         }
 
         void action_quit () {
-
+            destroy();
         }
 
         void action_copy () {
@@ -557,7 +558,6 @@ namespace Droppy {
         }
 
         void action_fullscreen () {
-            print("action_fulscreen");
             if (is_fullscreen) {
                 unfullscreen();
                 is_fullscreen = false;
