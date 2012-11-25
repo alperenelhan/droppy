@@ -28,15 +28,6 @@ msgstr "Opdrachtregel gebruiken"
 msgid "Terminal"
 msgstr "Terminal"
 
-#: /home/david/src/droppy/po/../src/config.vala:14
-#: /home/david/src/droppy/po/../src/DroppyWindow.vala:503
-msgid "New Window"
-msgstr "Nieuw venster"
-
-#: /home/david/src/droppy/po/../src/config.vala:15
-msgid "New Root Window"
-msgstr "Nieuw hoofdvenster"
-
 #: /home/david/src/droppy/po/../src/Droppy.vala:99
 msgid "Set shell at launch"
 msgstr "Activeer deze shell bij opstarten"

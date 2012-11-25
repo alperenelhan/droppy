@@ -28,15 +28,6 @@ msgstr "Usa la riga di comando"
 msgid "Terminal"
 msgstr "Terminale"
 
-#: /home/david/src/droppy/po/../src/config.vala:14
-#: /home/david/src/droppy/po/../src/DroppyWindow.vala:503
-msgid "New Window"
-msgstr "Nuova finestra"
-
-#: /home/david/src/droppy/po/../src/config.vala:15
-msgid "New Root Window"
-msgstr "Nuova finestra root"
-
 #: /home/david/src/droppy/po/../src/Droppy.vala:99
 msgid "Set shell at launch"
 msgstr "Imposta shell al lancio"

@@ -522,10 +522,6 @@ namespace Droppy {
             terminals.remove (current_terminal);
         }
 
-        // void action_new_window () {
-        //     app.new_window ();
-        // }
-
         void action_new_tab () {
             if (settings.follow_last_tab)
                 new_tab (current_terminal.get_shell_location ());
@@ -572,9 +568,6 @@ namespace Droppy {
 
             { "CloseTab", Gtk.Stock.CLOSE, N_("Close"), "<Control><Shift>w", N_("Close"),
               action_close_tab },
-
-            // { "New window", "window-new", N_("New Window"), "<Control><Shift>n", N_("Open a new window"),
-            //   action_new_window },
 
             { "New tab", Gtk.Stock.NEW, N_("New Tab"), "<Control><Shift>t", N_("Create a new tab"),
               action_new_tab },

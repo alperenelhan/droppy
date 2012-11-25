@@ -28,15 +28,6 @@ msgstr "명령줄 사용하기"
 msgid "Terminal"
 msgstr "터미널"
 
-#: /home/david/src/droppy/po/../src/config.vala:14
-#: /home/david/src/droppy/po/../src/DroppyWindow.vala:503
-msgid "New Window"
-msgstr "새 창"
-
-#: /home/david/src/droppy/po/../src/config.vala:15
-msgid "New Root Window"
-msgstr "새 루트 권한 창 열기"
-
 #: /home/david/src/droppy/po/../src/Droppy.vala:99
 msgid "Set shell at launch"
 msgstr "시작할 때 쉘을 실행하도록 설정"

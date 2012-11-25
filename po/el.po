@@ -28,15 +28,6 @@ msgstr "Χρήση της γραμμής εντολών"
 msgid "Terminal"
 msgstr "Τερματικό"
 
-#: /home/david/src/droppy/po/../src/config.vala:14
-#: /home/david/src/droppy/po/../src/DroppyWindow.vala:503
-msgid "New Window"
-msgstr "Νέο Παράθυρο"
-
-#: /home/david/src/droppy/po/../src/config.vala:15
-msgid "New Root Window"
-msgstr "Νέο παράθυρο υπερχρήστη"
-
 #: /home/david/src/droppy/po/../src/Droppy.vala:99
 msgid "Set shell at launch"
 msgstr "Κέλυφος κατά την εκκίνηση"

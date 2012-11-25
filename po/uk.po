@@ -28,15 +28,6 @@ msgstr "Використати командну лінію"
 msgid "Terminal"
 msgstr "Термінал"
 
-#: /home/david/src/droppy/po/../src/config.vala:14
-#: /home/david/src/droppy/po/../src/DroppyWindow.vala:503
-msgid "New Window"
-msgstr "Нове вікно"
-
-#: /home/david/src/droppy/po/../src/config.vala:15
-msgid "New Root Window"
-msgstr "Нове Root-вікно"
-
 #: /home/david/src/droppy/po/../src/Droppy.vala:99
 msgid "Set shell at launch"
 msgstr "Обрати командний інтерпретатор при старті"

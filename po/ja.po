@@ -28,15 +28,6 @@ msgstr "コマンドラインを利用する"
 msgid "Terminal"
 msgstr "ターミナル"
 
-#: /home/david/src/droppy/po/../src/config.vala:14
-#: /home/david/src/droppy/po/../src/DroppyWindow.vala:503
-msgid "New Window"
-msgstr "新規ウィンドウ"
-
-#: /home/david/src/droppy/po/../src/config.vala:15
-msgid "New Root Window"
-msgstr "新しいルートウィンドウ"
-
 #: /home/david/src/droppy/po/../src/Droppy.vala:99
 msgid "Set shell at launch"
 msgstr "起動時にシェルを設定する"

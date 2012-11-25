@@ -28,15 +28,6 @@ msgstr "Použít příkazový řádek"
 msgid "Terminal"
 msgstr "Příkazová řádka"
 
-#: /home/david/src/droppy/po/../src/config.vala:14
-#: /home/david/src/droppy/po/../src/DroppyWindow.vala:503
-msgid "New Window"
-msgstr "Nové okno"
-
-#: /home/david/src/droppy/po/../src/config.vala:15
-msgid "New Root Window"
-msgstr "Nové hlavní okno"
-
 #: /home/david/src/droppy/po/../src/Droppy.vala:99
 msgid "Set shell at launch"
 msgstr "Nastavit shell při startu"

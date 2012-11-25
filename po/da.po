@@ -28,15 +28,6 @@ msgstr "Brug kommandolinjen"
 msgid "Terminal"
 msgstr "Terminal"
 
-#: /home/david/src/droppy/po/../src/config.vala:14
-#: /home/david/src/droppy/po/../src/DroppyWindow.vala:503
-msgid "New Window"
-msgstr "Nyt vindue"
-
-#: /home/david/src/droppy/po/../src/config.vala:15
-msgid "New Root Window"
-msgstr "Ny Root Vindue"
-
 #: /home/david/src/droppy/po/../src/Droppy.vala:99
 msgid "Set shell at launch"
 msgstr "Vælg shell ved opstart"

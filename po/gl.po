@@ -28,15 +28,6 @@ msgstr "Usar a liña de ordes"
 msgid "Terminal"
 msgstr "Terminal"
 
-#: /home/david/src/droppy/po/../src/config.vala:14
-#: /home/david/src/droppy/po/../src/DroppyWindow.vala:503
-msgid "New Window"
-msgstr "Nova xanela"
-
-#: /home/david/src/droppy/po/../src/config.vala:15
-msgid "New Root Window"
-msgstr "Nova xanela de administrador (root)"
-
 #: /home/david/src/droppy/po/../src/Droppy.vala:99
 msgid "Set shell at launch"
 msgstr "Estabelecer un intérprete de ordes no inicio"

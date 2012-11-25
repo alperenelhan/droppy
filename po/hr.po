@@ -28,15 +28,6 @@ msgstr "Koristiti naredbeni redak"
 msgid "Terminal"
 msgstr "Terminal"
 
-#: /home/david/src/droppy/po/../src/config.vala:14
-#: /home/david/src/droppy/po/../src/DroppyWindow.vala:503
-msgid "New Window"
-msgstr "Novi prozor"
-
-#: /home/david/src/droppy/po/../src/config.vala:15
-msgid "New Root Window"
-msgstr "Novi 'Root' prozor"
-
 #: /home/david/src/droppy/po/../src/Droppy.vala:99
 msgid "Set shell at launch"
 msgstr "Postavi ljusku pri pokretanju"

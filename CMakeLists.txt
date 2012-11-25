@@ -1,14 +1,8 @@
-# Check http://webdev.elementaryos.org/docs/developer-guide/cmake for documentation
-
 project (droppy)
 cmake_minimum_required (VERSION 2.8)
 cmake_policy (VERSION 2.6)
 
 list (APPEND CMAKE_MODULE_PATH ${CMAKE_SOURCE_DIR}/cmake/vala)
-
-#
-# Base bits
-#
 
 enable_testing ()
 
@@ -66,7 +60,6 @@ OPTIONS
 include (GSettings)
 add_schema ("org.elementary.droppy.gschema.xml")
 
-#link_libraries (m)
 add_subdirectory (po)
 
 add_executable (droppy ${VALA_C})

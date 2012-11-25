@@ -28,15 +28,6 @@ msgstr "Folosiți linia de comandă"
 msgid "Terminal"
 msgstr "Consolă"
 
-#: /home/david/src/droppy/po/../src/config.vala:14
-#: /home/david/src/droppy/po/../src/DroppyWindow.vala:503
-msgid "New Window"
-msgstr "Fereastră Nouă"
-
-#: /home/david/src/droppy/po/../src/config.vala:15
-msgid "New Root Window"
-msgstr "Fereastră Nouă Root"
-
 #: /home/david/src/droppy/po/../src/Droppy.vala:99
 msgid "Set shell at launch"
 msgstr "Setați shell la pornire"

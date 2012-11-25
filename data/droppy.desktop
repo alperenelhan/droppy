@@ -9,16 +9,3 @@ Type=Application
 Categories=GTK;Utility;TerminalEmulator;System;
 StartupNotify=true
 X-GNOME-Gettext-Domain=droppy
-
-X-Ayatana-Desktop-Shortcuts=NewWindow;NewRootWindow
-
-[NewWindow Shortcut Group]
-Name=New Window
-Exec=droppy
-TargetEnvironment=Unity
-
-[NewRootWindow Shortcut Group]
-Name=New Root Window
-Exec=gksu droppy
-TargetEnvironment=Unity
-

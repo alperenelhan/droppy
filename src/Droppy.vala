@@ -44,9 +44,6 @@ namespace Droppy {
         public int max_width;
         public int max_height;
 
-        // public int minimum_width;
-        // public int minimum_height;
-
         construct {
             print_version = false;
             build_data_dir = Constants.DATADIR;
@@ -117,13 +114,10 @@ namespace Droppy {
 
             default_width = max_width;
             default_height = (int) (max_height * 0.45);
-            // print("max_res: %d %d".printf(max_width, max_height));
-            // print("default_res: %d %d".printf(default_width, default_height));
         }
 
         public void showWindow() {
             window.move(0,0);
-            // print("resizing: %d %d".printf(default_width, default_height));
             window.resize(default_width, default_height);
             is_visible = true;
             window.show_all();
@@ -173,4 +167,4 @@ namespace Droppy {
             return DroppyApp.instance.run (args);
         }
     }
-} // Namespace
+}
