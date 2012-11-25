@@ -101,96 +101,96 @@ namespace Droppy {
                 bindings.add(binding);
 
                 debug("Successfully binded key " + accelerator);
+                new Notify.Notification ("Droppy has just started", "To activate press F12", "utilities-terminal").show ();
             }
         }
 
-        /**
-         * Unbind given accelerator.
-         *
-         * @param accelerator accelerator parsable by Gtk.accelerator_parse
-         */
-        public void unbind(string accelerator)
-        {
-            debug("Unbinding key " + accelerator);
+        // /**
+        //  * Unbind given accelerator.
+        //  *
+        //  * @param accelerator accelerator parsable by Gtk.accelerator_parse
+        //  */
+        // public void unbind(string accelerator)
+        // {
+        //     debug("Unbinding key " + accelerator);
 
-            unowned X.Display display = Gdk.x11_get_default_xdisplay();
-            X.Window root_window = Gdk.x11_get_default_root_xwindow();
+        //     unowned X.Display display = Gdk.x11_get_default_xdisplay();
+        //     X.Window root_window = Gdk.x11_get_default_root_xwindow();
 
-            // unbind all keys with given accelerator
-            Gee.List<Keybinding> remove_bindings = new Gee.ArrayList<Keybinding>();
-            foreach(Keybinding binding in bindings) {
-                if(str_equal(accelerator, binding.accelerator)) {
-                    foreach(uint lock_modifier in lock_modifiers) {
-                        display.ungrab_key(binding.keycode, binding.modifiers, root_window);
-                    }
-                    remove_bindings.add(binding);
-                }
-            }
+        //     // unbind all keys with given accelerator
+        //     Gee.List<Keybinding> remove_bindings = new Gee.ArrayList<Keybinding>();
+        //     foreach(Keybinding binding in bindings) {
+        //         if(str_equal(accelerator, binding.accelerator)) {
+        //             foreach(uint lock_modifier in lock_modifiers) {
+        //                 display.ungrab_key(binding.keycode, binding.modifiers, root_window);
+        //             }
+        //             remove_bindings.add(binding);
+        //         }
+        //     }
 
-            // remove unbinded keys
-            bindings.remove_all(remove_bindings);
-        }
+        //     // remove unbinded keys
+        //     bindings.remove_all(remove_bindings);
+        // }
 
-        /**
-         * Press given accelerator on current display on the window which
-         * has focus at the time given.
-         *
-         * @param accelerator accelerator parsable by Gtk.accelerator_parse
-         */
-        public void press(string accelerator)
-        {
-            if(perform_key_event(accelerator, true, 100)) {
-                debug("Successfully pressed key " + accelerator);
-            }
-        }
+        // /**
+        //  * Press given accelerator on current display on the window which
+        //  * has focus at the time given.
+        //  *
+        //  * @param accelerator accelerator parsable by Gtk.accelerator_parse
+        //  */
+        // public void press(string accelerator)
+        // {
+        //     if(perform_key_event(accelerator, true, 100)) {
+        //         debug("Successfully pressed key " + accelerator);
+        //     }
+        // }
 
-        /**
-         * Release given accelerator on current display on the window which
-         * has focus at the time given.
-         *
-         * @param accelerator accelerator parsable by Gtk.accelerator_parse
-         */
-        public void release(string accelerator)
-        {
-            if(perform_key_event(accelerator, false, 0)) {
-                debug("Successfully released key " + accelerator);
-            }
-        }
+        // /**
+        //  * Release given accelerator on current display on the window which
+        //  * has focus at the time given.
+        //  *
+        //  * @param accelerator accelerator parsable by Gtk.accelerator_parse
+        //  */
+        // public void release(string accelerator)
+        // {
+        //     if(perform_key_event(accelerator, false, 0)) {
+        //         debug("Successfully released key " + accelerator);
+        //     }
+        // }
 
-        /**
-         * Helper method performing given accelerator on current active
-         * window.
-         *
-         * @param accelerator accelerator parsable by Gtk.accelerator_parse
-         * @param press true for press key; false for releasing
-         * @param delay delay in milli seconds
-         * @return true if creation was successful; otherwise false.
-         */
-        private bool perform_key_event(string accelerator, bool press, ulong delay)
-        {
-            // convert accelerator
-            uint keysym;
-            Gdk.ModifierType modifiers;
-            Gtk.accelerator_parse(accelerator, out keysym, out modifiers);
-            unowned X.Display display = Gdk.x11_get_default_xdisplay();
-            int keycode = display.keysym_to_keycode(keysym);
+        // /**
+        //  * Helper method performing given accelerator on current active
+        //  * window.
+        //  *
+        //  * @param accelerator accelerator parsable by Gtk.accelerator_parse
+        //  * @param press true for press key; false for releasing
+        //  * @param delay delay in milli seconds
+        //  * @return true if creation was successful; otherwise false.
+        //  */
+        // private bool perform_key_event(string accelerator, bool press, ulong delay)
+        // {
+        //     // convert accelerator
+        //     uint keysym;
+        //     Gdk.ModifierType modifiers;
+        //     Gtk.accelerator_parse(accelerator, out keysym, out modifiers);
+        //     unowned X.Display display = Gdk.x11_get_default_xdisplay();
 
-            // FIXME: there must be an easier way
-            int modifierykey = 0;
-            switch(modifiers) {
-                case Gdk.ModifierType.CONTROL_MASK:
-                    // currently missing in the gdk binding
-                    //modifierykey = Gdk.Key.Control_L;
-                    modifierykey = 0xffe3;
-                    break;
-                case Gdk.ModifierType.SHIFT_MASK:
-                    // currently missing in the gdk binding
-                    //modifierykey = Gdk.Key.Shift_L;
-                    modifierykey = 0xffe1;
-                    break;
-            }
-            return false;
-        }
+        //     // FIXME: there must be an easier way
+        //     int modifierykey = 0;
+        //     switch(modifiers) {
+        //         case Gdk.ModifierType.CONTROL_MASK:
+        //             // currently missing in the gdk binding
+        //             //modifierykey = Gdk.Key.Control_L;
+        //             modifierykey = 0xffe3;
+        //             break;
+        //         case Gdk.ModifierType.SHIFT_MASK:
+        //             // currently missing in the gdk binding
+        //             //modifierykey = Gdk.Key.Shift_L;
+        //             modifierykey = 0xffe1;
+        //             break;
+        //     }
+        //     return false;
+        // }
 
         /**
          * Event filter method needed to fetch X.Events
