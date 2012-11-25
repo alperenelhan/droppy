@@ -219,6 +219,7 @@ namespace Droppy {
             this.key_press_event.connect ((e) => {
                 switch (e.keyval) {
                     case Gdk.Key.@0:
+                    case Gdk.Key.KP_0:
                         if ((e.state & Gdk.ModifierType.CONTROL_MASK) != 0) {
                             action_zoom_default_font ();
                             return true;
