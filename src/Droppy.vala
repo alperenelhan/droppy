@@ -1,5 +1,9 @@
 // -*- Mode: vala; indent-tabs-mode: nil; tab-width: 4 -*-
 /***
+    Maintainers:
+        2011-2012 Mario Guerriero <mefrio.g@gmail.com>
+        2012 -    Droppy Developers
+
     BEGIN LICENSE
 
     Copyright (C) 2011-2012 Mario Guerriero <mefrio.g@gmail.com>

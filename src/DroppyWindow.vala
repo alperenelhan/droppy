@@ -1,6 +1,10 @@
 // -*- Mode: vala; indent-tabs-mode: nil; tab-width: 4 -*-
 /***
-    BEGIN ICENSE
+    Maintainers:
+        2011-2012 David Gomes <davidrafagomes@gmail.com>
+        2012 -    Droppy Developers
+
+    BEGIN LICENSE
 
     Copyright (C) 2011-2012 David Gomes <davidrafagomes@gmail.com>
     This program is free software: you can redistribute it and/or modify it
