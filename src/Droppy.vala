@@ -99,12 +99,19 @@ namespace Droppy {
                     warning (e.message);
                 }
             }
-
-            hideWindow();
+            window.window_state_event.connect ((e) => {
+                if (e.new_window_state == Gdk.WindowState.ICONIFIED) {
+                    hideWindow ();
+                    window.deiconify();
+                }
+               return true;
+            });
+            window.skip_pager_hint = true;
+            window.skip_taskbar_hint = true;
+            is_visible = false;
             key_manager = new KeybindingManager();
             key_manager.init();
-            key_manager.bind("F8", toggleView);
-
+            key_manager.bind("F12", toggleView);
             max_width = window.screen.get_width();
             max_height = window.screen.get_height();
 
@@ -119,7 +126,7 @@ namespace Droppy {
             // print("resizing: %d %d".printf(default_width, default_height));
             window.resize(default_width, default_height);
             is_visible = true;
-            window.show();
+            window.show_all();
             window.set_keep_above(true);
         }
 
@@ -160,7 +167,7 @@ namespace Droppy {
 
             if (print_version) {
                 stdout.printf ("Droppy %s\n", Constants.VERSION);
-                stdout.printf ("Copyright 2011-2012 Terminal Developers.\n");
+                stdout.printf ("Copyright 2011-2012 Droppy Developers.\n");
                 return 0;
             }
             return DroppyApp.instance.run (args);
