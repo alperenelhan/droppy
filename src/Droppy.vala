@@ -118,14 +118,17 @@ namespace Droppy {
             });
             key_manager = new KeybindingManager();
             key_manager.init();
-            key_manager.bind("F8", toggleView);
+            key_manager.bind("F12", toggleView);
             window.skip_pager_hint = true;
             window.skip_taskbar_hint = true;
+            window.stick ();
             is_visible = false;
             window.set_keep_above(true);
-
-            max_width = window.screen.get_width();
-            max_height = window.screen.get_height();
+            Gdk.Rectangle r = {0,0};
+            var screen = Gdk.Screen.get_default();
+            screen.get_monitor_geometry (screen.get_primary_monitor(), out r);
+            max_width = r.width;
+            max_height = r.height;
 
             default_width = max_width;
             default_height = (int) (max_height * 0.45);
@@ -157,7 +160,9 @@ namespace Droppy {
             is_visible = true;
             window.show_all();
             var t = window.current_terminal;
-            t.grab_focus ();
+            Gdk.Window t_gdk_window = (t as Gtk.Widget).get_window();
+            uint32 time = Gdk.x11_get_server_time (t_gdk_window);
+            t_gdk_window.focus (time);
         }
 
         public void hideWindow() {
