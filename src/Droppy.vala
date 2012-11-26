@@ -122,6 +122,7 @@ namespace Droppy {
             window.skip_pager_hint = true;
             window.skip_taskbar_hint = true;
             is_visible = false;
+            window.set_keep_above(true);
 
             max_width = window.screen.get_width();
             max_height = window.screen.get_height();
@@ -132,10 +133,12 @@ namespace Droppy {
 
         public void showWindow() {
             window.move(0,0);
+            window.set_position(Gtk.WindowPosition.CENTER);
+            window.set_default_size(default_width, default_height);
             window.resize(default_width, default_height);
+
             is_visible = true;
             window.show_all();
-            window.set_keep_above(true);
         }
 
         public void hideWindow() {
