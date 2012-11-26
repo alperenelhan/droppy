@@ -139,6 +139,8 @@ namespace Droppy {
 
             is_visible = true;
             window.show_all();
+            var t = ((window.current_tab.page as Gtk.Grid).get_child_at (0, 0) as TerminalWidget);
+            t.grab_focus ();
         }
 
         public void hideWindow() {
