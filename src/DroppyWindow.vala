@@ -546,6 +546,9 @@ namespace Droppy {
 
         void action_fullscreen () {
             if (is_fullscreen) {
+                set_position(Gtk.WindowPosition.CENTER);
+                set_default_size(default_width, default_height);
+                resize(default_width, default_height);
                 unfullscreen();
                 is_fullscreen = false;
             } else {
