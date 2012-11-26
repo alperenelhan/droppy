@@ -118,7 +118,7 @@ namespace Droppy {
             });
             key_manager = new KeybindingManager();
             key_manager.init();
-            key_manager.bind("F12", toggleView);
+            key_manager.bind("F8", toggleView);
             window.skip_pager_hint = true;
             window.skip_taskbar_hint = true;
             is_visible = false;
@@ -131,15 +131,32 @@ namespace Droppy {
             default_height = (int) (max_height * 0.45);
         }
 
-        public void showWindow() {
+        public void checkWindowStatus() {
+            /*
+                this method was originally intended to
+                set window geometry after checking if it's already valid
+
+                from valadoc.org:
+                    get_position is not 100% reliable because the X Window System does not
+                    specify a way to obtain the geometry of the decorations placed on a window
+                    by the window manager.
+                    Thus GTK+ is using a "best guess" that works with most window managers.
+
+                Then there is no need to check window geometry.
+            */
+
+            // default_height and default_width will be replaced after implementing settings support.
             window.move(0,0);
             window.set_position(Gtk.WindowPosition.CENTER);
             window.set_default_size(default_width, default_height);
             window.resize(default_width, default_height);
+        }
 
+        public void showWindow() {
+            checkWindowStatus();
             is_visible = true;
             window.show_all();
-            var t = ((window.current_tab.page as Gtk.Grid).get_child_at (0, 0) as TerminalWidget);
+            var t = window.current_terminal;
             t.grab_focus ();
         }
 

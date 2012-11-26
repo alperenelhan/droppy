@@ -33,7 +33,6 @@ namespace Droppy {
     public class DroppyWindow : Gtk.Window {
 
         public Gdk.Display display;
-        public Gdk.Screen screen;
 
         public DroppyApp app;
 
@@ -92,17 +91,8 @@ namespace Droppy {
             init ();
         }
 
-        // public DroppyWindow.with_coords (Granite.Application app, int x, int y,
-        //                                            bool should_recreate_tabs = true) {
-
-        //     this.app = app as DroppyApp;
-        //     set_application (app);
-        //     this.move (x, y);
-        //     init (should_recreate_tabs, false);
-        // }
-
         private void init (bool recreate_tabs=true, bool restore_pos = true) {
-            this.screen = this.get_screen();
+
             this.display = screen.get_display();
             this.icon_name = "utilities-terminal";
 
@@ -132,9 +122,6 @@ namespace Droppy {
                 error ("Couldn't load the UI: %s", e.message);
             }
 
-            Notify.init ("droppy");
-            //new Notify.Notification ("Bye Process", "p finished","utilities-terminal").show ();
-
             Gtk.AccelGroup accel_group = ui.get_accel_group ();
             add_accel_group (accel_group);
 
@@ -148,7 +135,6 @@ namespace Droppy {
             if (recreate_tabs)
                 open_tabs ();
 
-            // set_size_request (app.minimum_width, app.minimum_height);
         }
 
         private void setup_ui () {
@@ -156,19 +142,10 @@ namespace Droppy {
             notebook = new Granite.Widgets.DynamicNotebook ();
             notebook.show_icons = false;
             notebook.tab_switched.connect (on_switch_page);
-            // notebook.tab_moved.connect (on_tab_moved);
             notebook.allow_drag = true;
             notebook.allow_new_window = false;
             notebook.allow_duplication = false;
             notebook.margin_top = 3;
-
-            // var css_provider = new Gtk.CssProvider();
-            // css_provider.load_from_path("/usr/share/themes/elementary/gtk-3.0/gtk.css");
-            // var scr_test = Gdk.Screen.get_default();
-            // var style_context = notebook.get_style_context();
-            // style_context.add_provider_for_screen(scr_test, css_provider, Gtk.STYLE_PROVIDER_PRIORITY_THEME);
-
-            // notebook.get_style_context ().add_class ("notebook");
 
             set_decorated (false);
 
@@ -291,23 +268,6 @@ namespace Droppy {
                 fullscreen ();
         }
 
-        // private void on_tab_moved (Granite.Widgets.Tab tab, int new_pos, bool new_window, int x, int y) {
-        //     if (new_window) {
-        //         app.new_window_with_coords (x, y, false);
-        //         var win = app.windows.last ().data;
-        //         //win.move (x, y);
-
-        //         var n = win.notebook;
-        //         //remove the one automatically created after inserting
-        //         n.insert_tab (tab, -1);
-        //         n.remove_tab (n.tabs.nth_data (1));
-
-        //         //notebook.remove_tab (tab);
-        //         if (notebook.n_tabs == 0)
-        //             destroy ();
-        //     }
-        // }
-
         private void update_context_menu () {
             clipboard.request_targets (update_context_menu_cb);
         }
@@ -409,19 +369,6 @@ namespace Droppy {
             t.window_title_changed.connect (() => {
                 string new_text = t.get_window_title ();
 
-                /* Strips the location */
-                /*for (int i = 0; i < new_text.length; i++) {
-                  if (new_text[i] == ':') {
-                  new_text = new_text[i + 2:new_text.length];
-                  break;
-                  }
-                  }
-
-                  if (new_text.length > 50) {
-                  new_text = new_text[new_text.length - 50:new_text.length];
-                  }
-                */
-
                 tab.label = new_text;
             });
 
@@ -436,12 +383,6 @@ namespace Droppy {
             });
 
             t.set_font (term_font);
-
-            // int minimum_width = t.calculate_width (80);
-            // int minimum_height = t.calculate_height (24);
-            // set_size_request (minimum_width, minimum_height);
-            // app.minimum_width = minimum_width;
-            // app.minimum_height = minimum_height;
 
             terminals.append (t);
 
