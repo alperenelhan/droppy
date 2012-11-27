@@ -129,7 +129,6 @@ namespace Droppy {
             ui.ensure_update ();
 
             setup_ui ();
-
             term_font = FontDescription.from_string (get_term_font ());
 
             if (recreate_tabs)

@@ -110,7 +110,7 @@ namespace Droppy {
                 }
             }
             window.window_state_event.connect ((e) => {
-                if (e.new_window_state == Gdk.WindowState.ICONIFIED) {
+                if ( (e.new_window_state & Gdk.WindowState.ICONIFIED ) != 0) {
                     hideWindow ();
                     window.deiconify();
                 }
@@ -123,7 +123,6 @@ namespace Droppy {
             window.skip_taskbar_hint = true;
             window.stick ();
             is_visible = false;
-            window.set_keep_above(true);
             Gdk.Rectangle r = {0,0};
             var screen = Gdk.Screen.get_default();
             screen.get_monitor_geometry (screen.get_primary_monitor(), out r);
@@ -159,10 +158,13 @@ namespace Droppy {
             checkWindowStatus();
             is_visible = true;
             window.show_all();
+            window.set_keep_above(true);
             var t = window.current_terminal;
-            Gdk.Window t_gdk_window = (t as Gtk.Widget).get_window();
-            uint32 time = Gdk.x11_get_server_time (t_gdk_window);
-            t_gdk_window.focus (time);
+            Gdk.Window gdk_window = (window as Gtk.Widget).get_window();
+            uint32 time = Gdk.x11_get_server_time (gdk_window);
+            gdk_window.focus (time);
+            window.grab_focus();
+            t.grab_focus();
         }
 
         public void hideWindow() {
