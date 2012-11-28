@@ -114,6 +114,9 @@ namespace Droppy {
                     hideWindow ();
                     window.deiconify();
                 }
+                else if ( (e.new_window_state & Gdk.WindowState.MAXIMIZED ) != 0) {
+                    window.unmaximize();
+                }
                return true;
             });
             key_manager = new KeybindingManager();
