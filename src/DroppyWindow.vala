@@ -226,13 +226,21 @@ namespace Droppy {
 
                         break;
                     case Gdk.Key.Page_Down:
-                        if ((e.state & Gdk.ModifierType.CONTROL_MASK) != 0) {
+                        if ((e.state & (Gdk.ModifierType.CONTROL_MASK | Gdk.ModifierType.SHIFT_MASK) ) == (Gdk.ModifierType.CONTROL_MASK | Gdk.ModifierType.SHIFT_MASK) ) {
+                            move_tab_to_right ();
+                            return true;
+                        }
+                        else if ((e.state & Gdk.ModifierType.CONTROL_MASK) != 0) {
                             action_next_tab ();
                             return true;
                         }
                         break;
                     case Gdk.Key.Page_Up:
-                        if ((e.state & Gdk.ModifierType.CONTROL_MASK) != 0) {
+                        if ((e.state & (Gdk.ModifierType.CONTROL_MASK | Gdk.ModifierType.SHIFT_MASK) ) == (Gdk.ModifierType.CONTROL_MASK | Gdk.ModifierType.SHIFT_MASK) ) {
+                            move_tab_to_left ();
+                            return true;
+                        }
+                        else if ((e.state & Gdk.ModifierType.CONTROL_MASK) != 0) {
                             action_previous_tab ();
                             return true;
                         }
@@ -438,6 +446,13 @@ namespace Droppy {
             return false;
         }
 
+        private void move_tab_to_left () {
+            //TODO:
+        }
+        private void move_tab_to_right () {
+            //TODO:
+        }
+
         void action_quit () {
             destroy();
         }
@@ -495,19 +510,21 @@ namespace Droppy {
 
         void action_fullscreen () {
             if (is_fullscreen) {
-                set_position(Gtk.WindowPosition.CENTER);
                 set_default_size(default_width, default_height);
                 resize(default_width, default_height);
                 unfullscreen();
+                move(0,0);
+                notebook.margin_top = 3;
                 is_fullscreen = false;
             } else {
+                notebook.margin_top = 0;
                 fullscreen();
                 is_fullscreen = true;
             }
         }
 
         static const Gtk.ActionEntry[] main_entries = {
-            { "Quit", Gtk.Stock.QUIT, N_("Quit"), "<Control>q", N_("Quit"), action_quit },
+            { "Quit", Gtk.Stock.QUIT, N_("Quit"), "<Control><Shift>q", N_("Quit"), action_quit },
 
             { "CloseTab", Gtk.Stock.CLOSE, N_("Close"), "<Control><Shift>w", N_("Close"),
               action_close_tab },

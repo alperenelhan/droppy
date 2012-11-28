@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2012-11-28 15:05+0200\n"
+"POT-Creation-Date: 2012-11-28 16:34+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -22,92 +22,92 @@ msgid "Set shell at launch"
 msgstr ""
 
 #: /home/oae/Development/personal/droppy/po/../src/DroppyWindow.vala:105
-#: /home/oae/Development/personal/droppy/po/../src/DroppyWindow.vala:367
-#: /home/oae/Development/personal/droppy/po/../src/DroppyWindow.vala:371
+#: /home/oae/Development/personal/droppy/po/../src/DroppyWindow.vala:374
+#: /home/oae/Development/personal/droppy/po/../src/DroppyWindow.vala:378
 msgid "Terminal"
 msgstr ""
 
-#: /home/oae/Development/personal/droppy/po/../src/DroppyWindow.vala:253
+#: /home/oae/Development/personal/droppy/po/../src/DroppyWindow.vala:260
 msgid "Open a new tab"
 msgstr ""
 
-#: /home/oae/Development/personal/droppy/po/../src/DroppyWindow.vala:511
+#: /home/oae/Development/personal/droppy/po/../src/DroppyWindow.vala:533
 msgid "Quit"
 msgstr ""
 
-#: /home/oae/Development/personal/droppy/po/../src/DroppyWindow.vala:513
+#: /home/oae/Development/personal/droppy/po/../src/DroppyWindow.vala:535
 msgid "Close"
 msgstr ""
 
-#: /home/oae/Development/personal/droppy/po/../src/DroppyWindow.vala:516
+#: /home/oae/Development/personal/droppy/po/../src/DroppyWindow.vala:538
 msgid "New Tab"
 msgstr ""
 
-#: /home/oae/Development/personal/droppy/po/../src/DroppyWindow.vala:516
+#: /home/oae/Development/personal/droppy/po/../src/DroppyWindow.vala:538
 msgid "Create a new tab"
 msgstr ""
 
-#: /home/oae/Development/personal/droppy/po/../src/DroppyWindow.vala:519
+#: /home/oae/Development/personal/droppy/po/../src/DroppyWindow.vala:541
 msgid "Copy"
 msgstr ""
 
-#: /home/oae/Development/personal/droppy/po/../src/DroppyWindow.vala:519
+#: /home/oae/Development/personal/droppy/po/../src/DroppyWindow.vala:541
 msgid "Copy the selected text"
 msgstr ""
 
-#: /home/oae/Development/personal/droppy/po/../src/DroppyWindow.vala:522
+#: /home/oae/Development/personal/droppy/po/../src/DroppyWindow.vala:544
 msgid "Paste"
 msgstr ""
 
-#: /home/oae/Development/personal/droppy/po/../src/DroppyWindow.vala:522
+#: /home/oae/Development/personal/droppy/po/../src/DroppyWindow.vala:544
 msgid "Paste some text"
 msgstr ""
 
-#: /home/oae/Development/personal/droppy/po/../src/DroppyWindow.vala:525
+#: /home/oae/Development/personal/droppy/po/../src/DroppyWindow.vala:547
 msgid "Select All"
 msgstr ""
 
-#: /home/oae/Development/personal/droppy/po/../src/DroppyWindow.vala:526
+#: /home/oae/Development/personal/droppy/po/../src/DroppyWindow.vala:548
 msgid "Select all the text in the terminal"
 msgstr ""
 
-#: /home/oae/Development/personal/droppy/po/../src/DroppyWindow.vala:528
+#: /home/oae/Development/personal/droppy/po/../src/DroppyWindow.vala:550
 msgid "About"
 msgstr ""
 
-#: /home/oae/Development/personal/droppy/po/../src/DroppyWindow.vala:528
+#: /home/oae/Development/personal/droppy/po/../src/DroppyWindow.vala:550
 msgid "Show about window"
 msgstr ""
 
-#: /home/oae/Development/personal/droppy/po/../src/DroppyWindow.vala:530
+#: /home/oae/Development/personal/droppy/po/../src/DroppyWindow.vala:552
 msgid "Next Tab"
 msgstr ""
 
-#: /home/oae/Development/personal/droppy/po/../src/DroppyWindow.vala:530
+#: /home/oae/Development/personal/droppy/po/../src/DroppyWindow.vala:552
 msgid "Go to next tab"
 msgstr ""
 
-#: /home/oae/Development/personal/droppy/po/../src/DroppyWindow.vala:533
+#: /home/oae/Development/personal/droppy/po/../src/DroppyWindow.vala:555
 msgid "Previous Tab"
 msgstr ""
 
-#: /home/oae/Development/personal/droppy/po/../src/DroppyWindow.vala:533
+#: /home/oae/Development/personal/droppy/po/../src/DroppyWindow.vala:555
 msgid "Go to previous tab"
 msgstr ""
 
-#: /home/oae/Development/personal/droppy/po/../src/DroppyWindow.vala:536
+#: /home/oae/Development/personal/droppy/po/../src/DroppyWindow.vala:558
 msgid "Zoom in"
 msgstr ""
 
-#: /home/oae/Development/personal/droppy/po/../src/DroppyWindow.vala:539
+#: /home/oae/Development/personal/droppy/po/../src/DroppyWindow.vala:561
 msgid "Zoom out"
 msgstr ""
 
-#: /home/oae/Development/personal/droppy/po/../src/DroppyWindow.vala:542
+#: /home/oae/Development/personal/droppy/po/../src/DroppyWindow.vala:564
 msgid "Fullscreen"
 msgstr ""
 
-#: /home/oae/Development/personal/droppy/po/../src/DroppyWindow.vala:542
+#: /home/oae/Development/personal/droppy/po/../src/DroppyWindow.vala:564
 msgid "Toggle/Untoggle fullscreen"
 msgstr ""
 
