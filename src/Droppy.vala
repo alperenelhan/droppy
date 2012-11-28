@@ -66,8 +66,8 @@ namespace Droppy {
             bug_url = "https://bugs.launchpad.net/droppy";
             help_url = "https://answers.launchpad.net/droppy";
             translate_url = "https://translations.launchpad.net/droppy";
-            about_authors = { "Osman Alperen Elhan <alperen@elhan.org£",
-                              "Ahmet Yasin Uslu <nepjua@gmail.com" };
+            about_authors = { "Osman Alperen Elhan <alperen@elhan.org>",
+                              "Ahmet Yasin Uslu <nepjua@gmail.com>" };
 
             about_license_type = License.GPL_3_0;
         }
