@@ -145,7 +145,6 @@ namespace Droppy {
             notebook.allow_new_window = false;
             notebook.allow_duplication = false;
             notebook.margin_top = 3;
-
             set_decorated (false);
 
             notebook.tab_added.connect ((tab) => {
@@ -191,7 +190,17 @@ namespace Droppy {
             right_box.show ();
             notebook.can_focus = false;
             add (notebook);
-
+            this.scroll_event.connect ( (e) => {
+                switch (e.direction) {
+                    case ScrollDirection.UP:
+                        action_previous_tab ();
+                        return true;
+                    case ScrollDirection.DOWN:
+                        action_next_tab ();
+                        return true;
+                }
+                return false;
+            });
             this.key_press_event.connect ((e) => {
                 switch (e.keyval) {
                     case Gdk.Key.@0:
@@ -218,13 +227,13 @@ namespace Droppy {
                         break;
                     case Gdk.Key.Page_Down:
                         if ((e.state & Gdk.ModifierType.CONTROL_MASK) != 0) {
-                            action_previous_tab ();
+                            action_next_tab ();
                             return true;
                         }
                         break;
                     case Gdk.Key.Page_Up:
                         if ((e.state & Gdk.ModifierType.CONTROL_MASK) != 0) {
-                            action_next_tab ();
+                            action_previous_tab ();
                             return true;
                         }
                         break;
