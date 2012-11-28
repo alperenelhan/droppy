@@ -447,10 +447,35 @@ namespace Droppy {
         }
 
         private void move_tab_to_left () {
-            //TODO:
+            int to = get_tab_index ();
+            if (to == 0) {
+                to = notebook.n_tabs - 1;
+            }
+            else {
+                to = to -1;
+            }
+            notebook.set_tab_position(current_tab, to);
         }
         private void move_tab_to_right () {
-            //TODO:
+            int to = get_tab_index ();
+            if (to == notebook.n_tabs -1) {
+                to = 0;
+            }
+            else {
+                to = to +1;
+            }
+            notebook.set_tab_position(current_tab, to);
+        }
+
+        private int get_tab_index () {
+            int i = 0 ;
+            foreach (Granite.Widgets.Tab t in notebook.tabs) {
+                if (t == current_tab) {
+                    return i;
+                }
+                i++;
+            }
+            return i;
         }
 
         void action_quit () {
