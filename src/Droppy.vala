@@ -173,18 +173,11 @@ namespace Droppy {
             is_visible = true;
             window.show_all();
             window.set_keep_above(true);
-            var t = window.current_terminal;
-            Gdk.Window gdk_window = (window as Gtk.Widget).get_window();
-            uint32 time = Gdk.x11_get_server_time (gdk_window);
-            window.present_with_time(time);
-            //gdk_window.focus (time);
-            //window.grab_focus();
-            //t.grab_focus();
         }
 
         public void hideWindow() {
             is_visible = false;
-            window.iconify();
+            window.hide();
         }
 
         public void toggleView() {
