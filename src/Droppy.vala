@@ -48,6 +48,8 @@ namespace Droppy {
         public int max_width;
         public int max_height;
 
+        public string shell_open_cmd;
+
         construct {
             print_version = false;
             build_data_dir = Constants.DATADIR;
@@ -87,6 +89,12 @@ namespace Droppy {
 
             saved_state = new SavedState ();
             settings = new Settings ();
+            shell_open_cmd = "gksu chsh -s " + app_shell_name;
+
+            if( settings.is_login_shell ) {
+                shell_open_cmd += " -l";
+            }
+
         }
 
 
@@ -103,12 +111,13 @@ namespace Droppy {
             window = new DroppyWindow (this);
             if (app_shell_name != null) {
                 try {
-                    GLib.Process.spawn_command_line_async ("gksu chsh -s " + app_shell_name);
+                    GLib.Process.spawn_command_line_async (shell_open_cmd);
                     return;
                 } catch (Error e) {
                     warning (e.message);
                 }
             }
+
             window.window_state_event.connect ((e) => {
                 if ( (e.new_window_state & Gdk.WindowState.ICONIFIED ) != 0) {
                     hideWindow ();
@@ -119,9 +128,11 @@ namespace Droppy {
                 }
                return true;
             });
+
             key_manager = new KeybindingManager();
             key_manager.init();
             key_manager.bind("F12", toggleView);
+
             window.skip_pager_hint = true;
             window.skip_taskbar_hint = true;
             window.stick ();
@@ -165,14 +176,16 @@ namespace Droppy {
             var t = window.current_terminal;
             Gdk.Window gdk_window = (window as Gtk.Widget).get_window();
             uint32 time = Gdk.x11_get_server_time (gdk_window);
-            gdk_window.focus (time);
-            window.grab_focus();
-            t.grab_focus();
+            window.present_with_time(time);
+            //gdk_window.focus (time);
+            //window.grab_focus();
+            //t.grab_focus();
         }
 
         public void hideWindow() {
             is_visible = false;
-            window.hide();
+            // window.hide();
+            window.iconify();
         }
 
         public void toggleView() {

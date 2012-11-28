@@ -64,6 +64,8 @@ namespace Droppy {
         public string encoding { get; set; }
         public string font {get; set;}
 
+        public bool is_login_shell {get; set;}
+
         public Settings ()  {
             base ("org.elementary.droppy.Settings");
         }

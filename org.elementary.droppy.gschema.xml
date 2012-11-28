@@ -55,6 +55,11 @@
       <summary>Defines whether the terminal should remember tabs.</summary>
       <description>Defines whether the terminal should remember the last open tabs.</description>
     </key>
+    <key name="is-login-shell" type="b">
+      <default>true</default>
+      <summary>Defines whether the terminal should remember tabs.</summary>
+      <description>Defines whether the terminal should remember the last open tabs.</description>
+    </key>
     <key name="alt-changes-tab" type="b">
       <default>true</default>
       <summary>Defines whether Alt+N goes to nth tab.</summary>
