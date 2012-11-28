@@ -184,7 +184,6 @@ namespace Droppy {
 
         public void hideWindow() {
             is_visible = false;
-            // window.hide();
             window.iconify();
         }
 
