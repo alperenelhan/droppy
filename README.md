@@ -1,4 +1,3 @@
-
 # Droppy
 
 Droppy is a fork of [Pantheon Terminal][PT] focussed on drop-down usage.
@@ -11,5 +10,4 @@ Droppy is a fork of [Pantheon Terminal][PT] focussed on drop-down usage.
 
  [PT]: https://launchpad.net/pantheon-terminal
  [G]: http://guake.org/
- [d]: http://dev.elhan.org/projects/droppy
-
+ [d]: https://github.com/alperenelhan/droppy
